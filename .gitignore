@@ -1,0 +1,8 @@
+reteco_data/
+indexes/
+cache/
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
