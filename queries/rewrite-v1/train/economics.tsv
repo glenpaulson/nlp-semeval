@@ -1,0 +1,196 @@
+2_turn_1	In GDP calculations, what happens when companies sell goods from inventory instead of producing new ones?
+2_turn_2	How does GDP treat inventory when goods are sold at a loss, and does it subtract the original inventory value?
+2_turn_3	Can a country's total GDP become negative from a decrease in private inventories and weak sales?
+5_turn_1	In foreign aid, can just giving money to poor countries actually make them rich over time?
+5_turn_2	does the effectiveness of foreign aid in promoting economic growth depend mainly on how well the aid money is managed and used by recipient governments
+5_turn_3	What is the effect on economic growth of receiving large amounts of foreign aid without good economic policies in place?
+6_turn_1	In government finance, what happens to inflation when a country prints more money instead of selling bonds?
+6_turn_2	central bank independence and government ability to print money to finance spending
+6_turn_3	real-world examples of printing money leading to large increases in inflation
+6_turn_4	Why would a government choose to issue bonds instead of raising taxes or printing more money to finance its cash needs?
+7_turn_1	In behavioral economics, how does the attraction effect relate to people changing their preferences between options?
+7_turn_2	decoy effect in other fields such as marketing, psychology, neuroscience, and decision science and how it affects the ranking of choices
+7_turn_3	Is it common to refer to the attraction effect as the decoy effect?
+9_turn_1	In the economy, how does a dollar move between households, businesses, and the government?
+9_turn_2	What happens to a dollar when it moves overseas through imports or foreign investments in the economy?
+9_turn_3	Circular flow of money: households, businesses, government, and foreign sector, mapping a dollar's full journey
+9_turn_4	How can banks and government borrowing be shown in the five-sector model of money flows between households, businesses, the government, the financial sector, and the rest of the world?
+11_turn_1	In group innovation, what makes it risky for one group to be the first to try something new?
+11_turn_2	Would the Volunteer's Dilemma and free riding in group innovation make everyone hesitate to go first, since they know others will just copy?
+11_turn_3	Is the hesitation to go first in group innovation, where others wait to free ride and the Volunteer's Dilemma applies, really different from usual social dilemmas, or is it just another version of them?
+13_turn_1	In slave trade data analysis, what happens if I leave out years with zero recorded voyages when using log transformations?
+13_turn_2	Is the inverse hyperbolic sine transformation better than log transformations for handling zeros and very small values in slave trade voyage data analysis?
+13_turn_3	Would using ln(x+1) make it harder to explain the results for low or zero-voyage years in slave trade data analysis, compared with inverse hyperbolic sine (arcsinh) transformations?
+14_turn_1	In measuring Samsung's impact on South Korea's GDP, how does the timing of revenue recognition affect the numbers?
+14_turn_2	Does the way input costs are counted change how big Samsung's impact on South Korea's GDP appears, when revenue is recognized by tracking costs as they're incurred versus measuring outputs delivered?
+14_turn_3	Does using total revenue instead of value added make Samsung's impact on South Korea's GDP look bigger than it really is?
+19_turn_1	In the RBC model, how is the elasticity of substitution usually defined and written out?
+19_turn_2	In the RBC model, does the elasticity of substitution measure how easily capital shifts from one period to the next?
+19_turn_3	How do you derive the elasticity of substitution formula σ = d ln(x₁/x₂) / d ln(MRTS₁₂) from the log derivative?
+19_turn_4	Textbook derivation of elasticity of substitution from log derivative of input ratio with respect to MRTS, Cobb-Douglas production function, RBC model
+20_turn_1	In banking, how does paying back loan principal lead to fewer total deposits when interest rates go up?
+20_turn_2	why do banks worry when many depositors withdraw their deposits at once, and does that relate to loan repayments destroying deposits when interest rates rise
+20_turn_3	Banks making fewer new loans than loan repayments, higher interest rates, effect on total deposits and money supply
+20_turn_4	Does the common belief that banks just lend out deposits make it harder to understand why deposits fall when interest rates rise, given that loan repayments destroy deposits?
+23_turn_1	In New-Keynesian models, how do economists actually derive the main aggregate demand equations from theory?
+23_turn_2	Bayesian estimation of parameters in New-Keynesian aggregate demand equations derived from household Euler equation and aggregate demand relations
+23_turn_3	How much math background is needed to understand the recursive approach in New-Keynesian models?
+23_turn_4	How does the step-by-step derivation of the New-Keynesian aggregate demand equation (household Euler equation, aggregation, and firms' pricing and production decisions) become easier to follow in advanced New-Keynesian papers?
+25_turn_1	In Marx's theory of value, how does he decide what a worker's labor is actually worth?
+25_turn_2	Is surplus value in Marx's theory the extra labor that workers perform beyond the labor needed to produce the necessities that keep them going, which goes unpaid?
+25_turn_3	Why does Marx argue that only workers, not machines or money, create surplus value in his theory of value?
+25_turn_4	Marx surplus value: does profit still arise when commodities sell at their exact value?
+26_turn_1	In Piketty's model, how does ignoring different family wealth and split inheritances affect predictions about inequality?
+26_turn_2	Piketty model inequality prediction when wealth division within wealthy families is ignored, including effects of split inheritances and family wealth differences
+26_turn_3	Does splitting wealth among heirs in Piketty's model (dividing inheritances within rich families) only redistribute wealth among the rich, or does it change the overall return on capital?
+26_turn_4	Why does wealth remain concentrated in a few families even when inheritances are split up, in Piketty's model of wealth inequality?
+27_turn_1	In the Russian oil price cap, how much could this actually cut Russia's oil revenue compared to before?
+27_turn_2	Russian oil price cap mechanism to limit Russia's oil profits without raising global oil prices
+27_turn_3	Russian oil price cap vs. full EU ban on Russian oil: what is the difference?
+27_turn_4	Russian oil price cap: how much does its effectiveness depend on G7 countries controlling shipping and insurance?
+27_turn_5	Evidence that the Russian oil price cap is reducing Russia's oil revenue
+27_turn_6	Why was $60 chosen as the Russian oil price cap, and does that specific level make a difference for Russia's revenue or the global oil market?
+29_turn_1	In central banking, how can a central bank still function well even if its equity goes negative?
+29_turn_2	Why isn't negative equity at a central bank seen as a big risk for the whole financial system?
+29_turn_3	Why doesn't negative central bank equity spill over into broader financial system risk, given that a central bank can still create reserves?
+29_turn_4	central bank policy changes motivated by balance sheet repair, negative equity
+29_turn_5	Risk of political interference in central bank policy if central bank negative equity persists for an extended period
+30_turn_1	In global trade, what would happen to living standards if every country had to be completely self-sufficient?
+30_turn_2	What happens to a country's economy right after it stops trading, and does stopping trade hurt its future economic growth?
+30_turn_3	Brexit economic impact as an example of a country cutting off trade, and effects on living standards, productivity, and long-run growth
+30_turn_4	Does being highly connected through global trade make countries more vulnerable to major economic disruptions, or does it help them recover faster?
+34_turn_1	Regarding the Federal Reserve, how is its ownership structure different from a regular private company?
+34_turn_2	Does the inability of member banks to sell or use their Federal Reserve Bank stock challenge the idea that the Federal Reserve is private?
+34_turn_3	Does the Federal Reserve's power come from Congress rather than private banks, given that member banks hold non-transferable Federal Reserve Bank stock that gives them limited control and financial interest?
+36_turn_1	In economics, why does trading something make both people better off?
+36_turn_2	How do consumer surplus and producer surplus relate to gains from trade, and how do they show that both sides benefit from trading?
+36_turn_3	In economics, what happens to trade when one side's consumer surplus or producer surplus is too small, so that side doesn't feel it is getting enough out of the trade?
+36_turn_4	How does voluntary trade in a market, driven by gains from trade, consumer surplus, and producer surplus, ensure goods end up with the people who value them most?
+37_turn_1	In Fed policy tools, why did the Fed create the ON RRP facility instead of just expanding IOR access?
+37_turn_2	Did the easier reporting rules for nonmember banks make it difficult to give them Interest on Reserves (IOR) access?
+37_turn_3	Did different state rules for bank reserves make it difficult for the Fed to set one reserve policy for all banks, which contributed to the creation of the ON RRP facility instead of expanding IOR access to nonmember banks?
+41_turn_1	In Federal Reserve balance sheets, how did the FAST Act's surplus cap cause such a big capital drop in 2015?
+41_turn_2	How did the Federal Reserve transfer the surplus funds exceeding the FAST Act's $10 billion surplus cap to the Treasury in 2015: was it a single lump-sum transfer or a gradual process?
+41_turn_3	Does the Federal Reserve's December 2015 balance sheet explain how the new capital amount was calculated after the FAST Act surplus cap?
+42_turn_1	In state space models, how do you handle a 20-quarter lag of an unobserved variable like NAIRU in the transition matrix?
+42_turn_2	How does a state space model determine how much past NAIRU values matter each period when lags are built into the transition matrix as separate state variables?
+42_turn_3	In a state space model with a 20-quarter lag of NAIRU stored as separate lagged state variables in the transition matrix, does the Kalman filter update every lagged NAIRU state at each time step, or are some of them skipped?
+43_turn_1	In E85 pricing, how does the low energy return from corn ethanol affect its price compared to gasoline when oil markets are disrupted?
+43_turn_2	Would using mostly U.S. corn for ethanol keep E85 prices steadier when oil prices spike?
+43_turn_3	How do bad corn harvests affect E85 prices independently versus following gasoline prices?
+44_turn_1	In economics, how do models show how different industries depend on each other?
+44_turn_2	Why does GDP data usually appear as numbers in a table rather than as a network diagram of industry dependencies, given that input–output models map how industries depend on each other?
+44_turn_3	Would representing industry connections in input–output tables as a graph or network diagram make the links between industries more obvious than looking at the numbers in a table?
+45_turn_1	In Tesla's free Supercharging, how does giving away charging help sell more cars like Gillette does with razors?
+45_turn_2	Does Tesla make up for the cost of free Supercharging by selling more cars overall, in the same way Gillette sells razors cheaply to boost blade sales?
+45_turn_3	Does Tesla's free Supercharging generate enough additional car sales to cover the cost of providing free charging?
+46_turn_1	In economics, how do we decide if water counts as a commodity or something else?
+46_turn_2	Can water be both a commodity and a natural resource at the same time in economics, or do economists usually classify it as only one?
+46_turn_3	What conditions would make water be classified as a commodity rather than a natural resource in economics?
+49_turn_1	In optimal stopping problems, what exactly is the McCall search model and how does it fit in?
+49_turn_2	How do you determine the reservation wage cutoff in the McCall search model?
+49_turn_3	McCall search model infinite horizon with discounting: does an optimal stopping rule (reservation wage) still exist when draws continue forever?
+49_turn_4	How does changing the discount rate affect the reservation wage cutoff in the McCall search model?
+49_turn_5	McCall search model reservation wage cutoff: does it make a big difference if the wage offers are drawn from a normal distribution instead of another distribution?
+51_turn_1	In Russia's oil trade, how does freezing their dollar reserves lead them to ask for ruble payments instead?
+51_turn_2	Did Russia's build-up of foreign currency reserves after 2014 help it switch oil trade payments to rubles?
+51_turn_3	Can Russia use US dollars earned from oil sales, given the freezing of its dollar reserves and sanctions?
+51_turn_4	Does the dominance of the US dollar make it riskier for Russia to keep using dollars in its oil trade, given sanctions and frozen Russian central bank reserves?
+52_turn_1	In macroeconomics, does evidence show there's really no long-term tradeoff between inflation and unemployment?
+52_turn_2	why do some economists think unemployment can stay high even after the economy recovers, in relation to the long-run vertical Phillips curve and the absence of a long-term inflation-unemployment tradeoff
+52_turn_3	long-term plots of inflation and unemployment, Phillips curve, long-run relationship between inflation and unemployment charts
+53_turn_1	In negotiation games, how is the Colonel Blotto game similar to using points to bid on different items?
+53_turn_2	Ties or equal bids in points-based item bidding games versus ties in Colonel Blotto game battlefields: how are they handled differently?
+53_turn_3	Do people value items differently in negotiation settings than when they are simply trying to win points in bidding games like Colonel Blotto?
+55_turn_1	In WWII finance, how did freezing Danish and Norwegian assets show what was possible with asset freezes?
+55_turn_2	Why did the U.S. hesitate to use asset freezes against Japan in 1937?
+55_turn_3	How did the Allies' rollout of asset freezes in Europe during WWII reveal what mattered most to them at the time?
+55_turn_4	State Department neutrality concerns as reason for not freezing central bank assets during WWII
+55_turn_5	Did shifting battle lines or new alliances during WWII cause U.S. officials to rethink freezing central bank assets of Denmark, Norway, and other European countries?
+55_turn_6	Does the expansion of the Foreign Funds Control (FFC) change how U.S. officials viewed freezing central bank assets during World War II?
+55_turn_7	Did the early WWII asset freezes against Denmark and Norway create constraints that made later Allied asset-freezing decisions more difficult?
+56_turn_1	In measuring GDP and GNP, does a business owned by a US citizen but based in Germany count for the US or Germany?
+56_turn_2	How do statistical agencies determine whether someone counts as a US resident for GNP calculations?
+56_turn_3	foreign company business incorporated in the US, does its output count toward US GDP
+56_turn_4	Who decides the rules for what gets counted in US GDP versus GNP?
+58_turn_1	In debt to GDP ratios, why do some sources say it's 85% for the US while others mention 300%?
+58_turn_2	What is included in total debt when calculating the US total debt-to-GDP ratio of about 300%, including federal, business, and household debt?
+58_turn_3	standard definition of public debt vs. debt held by the public versus intragovernmental debt held by government accounts, what is included and excluded in debt-to-GDP ratios
+65_turn_1	In pricing new data products, how can the Business Model Canvas help me figure out value and target customers?
+65_turn_2	How can I make sure I don't miss any ongoing costs when using the Business Model Canvas to price new data products?
+65_turn_3	Does dividing yearly costs by the expected number of clients give a solid minimum price for a data product, or what might be missed with that approach?
+65_turn_4	how to factor upfront investments and social impact into monthly pricing for data products using the Business Model Canvas
+65_turn_5	Can the Business Model Canvas help identify different pricing strategies for each customer segment when pricing new data products?
+66_turn_1	In DSGE modeling, did switching the NY Fed's model from Python to Julia actually make things run faster?
+66_turn_2	Julia compiler vs. multiple dispatch: which feature speeds up large DSGE models (NY Fed DSGE model switched from Python to Julia)
+66_turn_3	Does Julia's type system speed up large DSGE models compared to Python, in the NY Fed's switch from Python to Julia?
+68_turn_1	In model selection, how can we tell if a simple age polynomial fits as well as separate age dummies?
+68_turn_2	How do you set up the likelihood-ratio test statistic for comparing a simple age polynomial model with a separate age dummies model when the two models have different numbers of parameters?
+68_turn_3	How can the restrictions that a simple age polynomial places on separate age dummies be written out using the dummy variables in a likelihood-ratio test?
+69_turn_1	In 1970s inflation, how did Germany manage to keep prices stable when others struggled?
+69_turn_2	Did the Bundesbank's limited response to the output gap keep inflation lower in Germany during the 1970s?
+69_turn_3	Bundesbank monetary targeting and non-accommodation of output gap in 1970s Germany versus UK and US inflation differences
+69_turn_4	Did Germany's reputation as a safe place for money help keep its inflation down in the 1970s, given the Bundesbank's monetary targeting approach?
+69_turn_5	Would people and businesses in Germany have behaved differently in the 1970s because they trusted the Bundesbank to keep inflation low, such as in wage-setting and price-setting decisions and their inflation expectations?
+72_turn_1	In statistical tests, what does the '3' in chi2(3) actually stand for?
+72_turn_2	How is the p-value calculated from a chi-squared test statistic with 3 degrees of freedom, chi2(3)?
+72_turn_3	Why did statisticians start using the chi-squared distribution for hypothesis tests based on sums of squared independent standard normal variables?
+74_turn_1	In IV regression, what exactly is the forbidden regression and why is it considered unreliable?
+74_turn_2	IV regression forbidden regression: consistency when first stage is in logs and second stage is in levels
+74_turn_3	Does taking logs or other nonlinear transformation of the first-stage predicted values in IV regression cause the instrument to pick up the error term, making the estimates inconsistent?
+74_turn_4	using exp of predicted log(X) from first stage as regressor in second stage IV regression (forbidden regression), is it valid for consistent estimates?
+74_turn_5	Does the projection property of 2SLS first-stage fitted values (OLS projection onto instruments) still hold when the first stage is in logs and the second stage is in levels in IV regression?
+78_turn_1	In economic growth, why is it measured by production increases instead of changes in national wealth?
+78_turn_2	Difference between tracking economic output (production) and measuring a country's accumulated national wealth in economic growth
+78_turn_3	Is national wealth a lagging indicator of current economic activity, compared with output as a measure of economic growth?
+79_turn_1	In behavioral macro models, how strong are the microfoundations in Gabaix's approach compared to traditional models?
+79_turn_2	Gabaix behavioral macro model cognitive discounting: effects on IS curve and Phillips curve
+79_turn_3	Step-by-step derivation linking individual behavioral assumptions (cognitive discounting, limited attention) to the IS curve in Gabaix's behavioral macro model
+79_turn_4	Gabaix behavioral macro model: how individual expectations are built up from microfoundations in the IS and Phillips curves, and whether any of that expectation formation is simply assumed
+79_turn_5	Gabaix other papers on behavioral macroeconomics with microfoundations for cognitive discounting, limited attention, and expectations compared to his 2020 paper
+83_turn_1	In government debt, why is borrowing from foreign lenders riskier than borrowing domestically when it comes to paying it back?
+83_turn_2	what happens when a country cannot pay back its foreign debt: does it get sued or just lose trust with foreign creditors?
+83_turn_3	Does borrowing from foreign lenders become harder for countries with less economic stability to repay government debt?
+83_turn_4	Is it harder for governments to renegotiate or restructure foreign debt with foreign lenders than with domestic lenders because foreign lenders' interests differ from those of local creditors?
+84_turn_1	In government debt, how does it actually help keep markets running smoothly and prevent cash shortages?
+84_turn_2	Empirical evidence on whether government debt boosts market liquidity, and is this debated?
+84_turn_3	How does government debt make transactions go more smoothly through market liquidity, especially domestic government debt acting as liquid assets?
+84_turn_4	Does government debt, by providing liquid assets, prevent people from rushing to withdraw their money from banks or markets all at once?
+84_turn_5	What happens to government bond prices when many investors try to sell government bonds at the same time, and do they still hold their value?
+85_turn_1	In principal-agent relationships, why might someone hide bad news from their boss out of fear?
+85_turn_2	Does asymmetric information make agents in principal-agent relationships more likely to hide bad news from their boss out of fear?
+85_turn_3	Why would an agent's own self-interest lead them to withhold bad news from their principal in principal-agent relationships, given asymmetric information?
+85_turn_4	What happens in a principal-agent relationship when the principal cannot verify what the agent knows or does, given asymmetric information?
+85_turn_5	Does fear of negative consequences in principal-agent relationships cause agents to take more risks to hide their mistakes from the boss?
+86_turn_1	In city geometry, how does Faden's work use math to explain why cities are shaped the way they are?
+86_turn_2	Did Varian have any major disagreements with the way theory was used in Faden's book on city geometry?
+86_turn_3	Has Faden introduced any major new ideas about city layout in his book on urban geometry using measure theory?
+88_turn_1	In production function research, what makes it so hard to estimate non-CES models with different elasticities?
+88_turn_2	Why are CES production functions easier to estimate than non-CES production functions with different elasticities, beyond mathematical tractability?
+88_turn_3	Are CES production function models simpler to modify than other non-CES production functions, or do CES models yield more reliable estimates than other types of production functions?
+92_turn_1	In economics, why do people debate whether it's a social science or something else?
+92_turn_2	How does the heavy use of mathematics in economics affect how people read and trust its results compared to other social sciences?
+92_turn_3	How has borrowing ideas from physics or biology changed the way economists study economics?
+92_turn_4	Do economists choose different research questions than chemists and physicists because economics borrows scientific methods like mathematical modeling, econometrics, and formal hypothesis testing from fields like physics and biology?
+92_turn_5	Why is it harder to trust economic results because economic testing methods are less precise than those used in physics?
+96_turn_1	In monopoly theory, how did Farrell and Klemperer's work help explain the role of network effects?
+96_turn_2	Do network effects, lock-in from product incompatibility, and market tipping explain why large platforms keep their lead when new rivals enter the market?
+96_turn_3	How do economists distinguish traditional monopolies from winner-take-all platform markets shaped by network effects?
+97_turn_1	In symbolic optimization, how do you tell the software which variable you want to optimize?
+97_turn_2	Where to find the official documentation for the Maximize function in symbolic optimization
+97_turn_3	tools for symbolic optimization that keep parameters symbolic while choosing which variable to optimize, e.g. Maximize[f, x] with other variables as parameters
+98_turn_1	In difference-in-differences studies, how does an event-study help if treatment effects fade over time?
+98_turn_2	In difference-in-differences event-study designs, if all units are treated at the same time, does this make it harder to detect fading treatment effects over time?
+98_turn_3	In difference-in-differences event-study designs, do staggered treatment timings alone help reveal fading treatment effects over time, or are other factors also important?
+100_turn_1	In government spending, why can't central banks just create all the money needed without causing inflation?
+100_turn_2	Is there ever a time when increasing the money supply would not cause prices to rise, and would taxes still matter in that case?
+100_turn_3	Countries relying on money creation instead of taxes to finance government spending, and what happened as a result
+101_turn_1	In international tourism, has globalization helped developed countries lower carbon emissions, and what does that mean for the environment?
+101_turn_2	Has globalization made it easier for developed countries to switch to renewable energy?
+101_turn_3	What factors, besides new technology, are driving lower carbon emissions from international tourism in developed countries as globalization progresses?
+102_turn_1	In country vs. firm data, why are standard errors usually bigger for country-level variables?
+102_turn_2	why are standard errors bigger for country-level variables if countries are more similar within each country, given there are fewer countries than firms to shrink the error
+102_turn_3	Does greater variation in firm sizes within a country make country-level estimates less precise, in country vs. firm data?
+102_turn_4	What happens to the reliability of country-level estimates when shocks across firms within a country are not independent?
+102_turn_5	Does aggregating firm-level data up to country-level variables lose detail, and does that loss partly explain why country-level standard errors are bigger and country-level estimates less reliable when firm sizes are unequal and firm shocks are correlated?
+102_turn_6	Why doesn't having many firms within each country shrink country-level standard errors much when there are few countries overall?

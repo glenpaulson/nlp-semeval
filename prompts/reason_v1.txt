@@ -1,0 +1,13 @@
+Below is a conversation between a user and an assistant, followed by the user's current question.
+
+<conversation>
+{history}
+</conversation>
+
+<current_question>
+{query}
+</current_question>
+
+Write a short note, at most 60 words, on the key concepts and terms that a relevant document for the current question would contain.
+- You may use background knowledge beyond the conversation.
+- Write plain text on one line, with no list, heading or explanation of your reasoning.

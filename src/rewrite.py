@@ -11,6 +11,13 @@ from src.data import Turn, normalize_history
 PROMPTS_DIR = Path(__file__).resolve().parent.parent / "prompts"
 QUOTES = "\"'`“”‘’"
 WORD = re.compile(r"\w+(?:['’.\-&]\w+)*")
+NOTE_MAX_WORDS = 60
+EMPTY_HISTORY = "(no previous conversation)"
+
+
+def variant_kind(variant: str) -> str:
+    """Return "note" for reason-* variants (LLM text is added to the query), else "rewrite" (it replaces the query)."""
+    return "note" if variant.startswith("reason") else "rewrite"
 
 
 def template_path(variant: str) -> Path:
@@ -25,11 +32,11 @@ def load_template(variant: str = "rewrite-v1") -> str:
 
 
 def build_messages(turn: Turn, variant: str = "rewrite-v1") -> list[dict[str, str]] | None:
-    """Return LLM messages for a turn, or None for turn 1 (empty history), which keeps its original query."""
+    """Return LLM messages for a turn, or None for a rewrite variant's turn 1, which keeps its original query."""
     history = normalize_history(turn.conversation_history).strip()
-    if not history:
+    if not history and variant_kind(variant) == "rewrite":
         return None
-    prompt = load_template(variant).format(history=history, query=turn.query.strip())
+    prompt = load_template(variant).format(history=history or EMPTY_HISTORY, query=turn.query.strip())
     return [{"role": "user", "content": prompt}]
 
 
@@ -42,6 +49,12 @@ def clean_query(text: str) -> str:
     """Return the first non-empty line of an LLM output, without surrounding quotes, on one line."""
     first = next((line for line in text.splitlines() if line.strip()), "")
     return single_line(first).strip(QUOTES).strip()
+
+
+def clean_note(text: str) -> tuple[str, bool]:
+    """Return an LLM note on one line without surrounding quotes, cut to NOTE_MAX_WORDS words, and whether it was cut."""
+    words = single_line(text).strip(QUOTES).split()
+    return " ".join(words[:NOTE_MAX_WORDS]), len(words) > NOTE_MAX_WORDS
 
 
 def _norm(word: str) -> str:

@@ -1,0 +1,235 @@
+0_turn_1	In home plastic incinerators, is it possible to filter out toxic gases and particles effectively on a small scale?
+0_turn_2	Why do large incinerators control pollution better than small home plastic incinerators, including their filters and scrubbers for toxic gases, particles, and dioxins?
+0_turn_3	Is it mostly cost or technology that makes home plastic incinerators unrealistic compared to large incinerators with pollution controls?
+0_turn_4	Laws prohibiting burning plastic waste at home
+0_turn_5	health effects of breathing fumes from burning plastic at home, short-term and long-term
+3_turn_1	In Earth's crust, how much lithium is actually there based on its typical concentration?
+3_turn_2	How much of Earth's crust would need to be excavated to obtain the lithium contained in it, given that lithium makes up about 0.002 percent (20 to 70 ppm by weight) of the crust, which is estimated at 2.4 to 2.8 × 10^19 tonnes?
+3_turn_3	lithium battery material needed to cover four months of use, based on lithium concentration in Earth's crust
+3_turn_4	energy density of lithium-ion batteries per kilogram (watt-hours per kg) of lithium-ion battery packs
+3_turn_5	Could the energy stored in lithium-ion batteries at 100 to 250 watt-hours per kilogram cover the total energy needs of the whole world for four winter months?
+3_turn_6	Is the total amount of lithium in Earth's crust (about 20 to 70 ppm, or 0.002%) close to the amount needed to store the world's energy needs for four winter months (about one-third of 580 million terajoules per year) in lithium-ion batteries (100 to 250 watt-hours per kilogram, with lithium about 7% of battery weight)?
+3_turn_7	Could all recoverable lithium supplies be used solely for grid-scale energy storage, enough to cover the world's energy needs for four winter months?
+6_turn_1	Regarding carbon-neutral flights, how is Qantas working to cut out single-use plastics in its operations?
+6_turn_2	Qantas passenger carbon offsets purpose and reasons beyond single-use plastics reduction
+6_turn_3	Qantas sustainable aviation fuel emissions reduction on flights
+6_turn_4	Qantas carbon-neutral flights: how Qantas tracks which flights are carbon neutral and avoids double counting carbon offsets
+7_turn_1	In home insulation, how does using low thermal mass materials inside affect warmth and comfort during mild winters?
+7_turn_2	Does adding large south-facing windows and more interior thermal mass reduce heating costs in a well-insulated home during mild winters?
+7_turn_3	Does interior insulation stop the walls from helping keep a home warm at night, in terms of thermal mass?
+9_turn_1	In automatic battery charging, can a smart power strip like the Kasa HS300 switch outlets when a charger finishes?
+9_turn_2	Kasa HS300 smart power strip: can it be set up so only one outlet is on at a time?
+9_turn_3	Kasa HS300 smart power strip schedule to charge multiple batteries one after another automatically
+13_turn_1	In drought-adapted gardening, who first came up with the term 'xeriscape' and when did it start being used?
+13_turn_2	Native plants commonly used in xeriscape gardens and what makes them better suited to dry conditions than other plants
+13_turn_3	Does mixing patches of lawn with mulched areas in a xeriscape garden actually save water and still look good?
+13_turn_4	does using gravel instead of mulch change how well xeriscape plants retain water in the soil
+13_turn_5	xeriscape garden design styles that are both water-efficient and visually interesting
+14_turn_1	In home energy modeling, how does BEopt figure out the carbon impact of different upgrades for a specific house?
+14_turn_2	BEopt local utility rates and weather inputs in energy simulations
+14_turn_3	BEopt side-by-side comparison of costs and carbon savings for each upgrade option for a specific house
+14_turn_4	BEopt home energy simulation: how much do estimates change when exact house details are missing?
+14_turn_5	How does BEopt manage the computational load of running many EnergyPlus simulations for home energy upgrade options without taking excessive time?
+16_turn_1	In home energy storage, how much bigger would a spring system need to be compared to batteries?
+16_turn_2	Would carbon nanotube (CNT) springs make a home energy storage system more practical for a regular house, compared to batteries?
+16_turn_3	Maximum energy density of steel springs for home energy storage (compared with CNT springs and batteries)
+17_turn_1	In paper production, how does making paper whiter affect its environmental impact compared to using less white paper?
+17_turn_2	Does using less white paper result in fewer harmful chemicals released into the environment, given that whiter paper requires bleaching with chlorine dioxide, oxygen, or hydrogen peroxide and water washing?
+17_turn_3	What happens to bleaching chemicals (chlorine dioxide, oxygen, hydrogen peroxide) left over in highly white paper: do they persist in the environment or break down?
+18_turn_1	In land restoration, how well does a flail mower handle lots of small pine stumps and thick brush?
+18_turn_2	Would using a flail mower make it easier to keep land walkable over time for land restoration with small pine stumps and thick brush?
+18_turn_3	Is it safe to run a tractor over small pine stumps with a flail mower without damaging the mower?
+19_turn_1	Regarding US vehicle regulations, how much extra CO2 are the new standards expected to add overall?
+19_turn_2	US vehicle emissions standards covering 2021–2026 model years: would applying the rules only to 2021–2026 models make the extra CO2 emissions smaller than if the standards lasted longer?
+19_turn_3	Effect of longer vehicle ownership (holding onto older cars longer) on lifetime CO2 emissions from US vehicle standards for 2021–2026 model years
+19_turn_4	US vehicle CO2 emissions standards for model years 2026 and later: do the 2026 standards carry over to later model year vehicles, or do they change again?
+19_turn_5	US vehicle emission standards for model years 2021–2026: how extra CO2 emissions add up year by year, including tailpipe and upstream emissions
+22_turn_1	In software optimization, how can you figure out the electricity saved if you can't measure server power directly?
+22_turn_2	How do you choose the correct carbon intensity value for software servers located in different countries when estimating electricity saved from emission intensity?
+22_turn_3	Calculating total emissions saved in software optimization by multiplying the number of runs by the emissions saved per run, using region-specific carbon intensity for servers in different countries
+22_turn_4	If the electricity powering servers comes entirely from renewable sources, does reducing compute time still lower carbon emissions from software operations?
+23_turn_1	In nuclear power plants, how do slow startups and limited flexibility affect their ability to quickly boost output?
+23_turn_2	Why do nuclear power plants limit their output due to electricity market structure, and how do market conditions affect nuclear plants' ability to quickly boost power output?
+23_turn_3	What makes France's nuclear reactors more flexible than those in other countries?
+23_turn_4	Does load-following operation of nuclear reactors, ramping output up and down with electricity demand as France does, lower the carbon footprint compared to running reactors at steady full output?
+24_turn_1	In California almond farming, how does almond milk demand affect water storage and the decision to flood valleys?
+24_turn_2	Does pulling water for California almond farming harm the Sacramento-San Joaquin Delta or San Francisco Bay ecosystem?
+24_turn_3	Does using better irrigation technology reduce the water impact of almond farming for almond milk production in California?
+24_turn_4	California almond orchards groundwater pumping long-term land damage
+26_turn_1	In rooftop solar installations, is it much cheaper to add extra panels later or does it cost almost the same as starting over?
+26_turn_2	Rooftop solar installation costs: what share of the total price is the solar panels themselves versus other expenses like approvals, vehicles, and scaffolding?
+26_turn_3	What happens if the inverter in a rooftop solar installation isn't big enough for extra panels added later?
+27_turn_1	In oil and gas production, how do they decide if a well is classified as an oil well or a gas well?
+27_turn_2	What happens when an oil well or gas well switches classification back and forth based on its gas-oil ratio (GOR), and does that affect overall oil and gas production numbers?
+27_turn_3	does new shale gas technology mean oil and gas production no longer have to move together
+27_turn_4	does having more natural gas wells make natural gas prices less tied to oil prices than before in the US shale gas era
+31_turn_1	In EU RDE testing, how does splitting routes between city, rural, and highway driving show what real drivers experience?
+31_turn_2	EU RDE testing: do hard braking and quick acceleration get included in the tests?
+31_turn_3	EU RDE testing different ambient temperatures and whether emissions results match real-world emissions year round
+31_turn_4	does vehicle loading with passengers or cargo during EU RDE emissions testing significantly change emissions results
+31_turn_5	EU RDE testing portable emissions measurement systems on real roads: do they capture all the ups and downs of normal driving?
+32_turn_1	In tree planting, how do falling leaves affect how much carbon a tree can store over its life?
+32_turn_2	Does the species of tree planted affect how much carbon it stores over its lifetime, or do different tree species store about the same amount of carbon?
+32_turn_3	how much CO2 does one tree absorb from the air over 20 years
+33_turn_1	Regarding New York's Bottle Bill, what decides if sparkling water cans get a deposit label or not?
+33_turn_2	New York Bottle Bill deposit label requirements for plain mineral water cans, and exclusions in the law that rule out mineral water
+33_turn_3	New York Bottle Bill deposit requirement for sugar-free flavored water beverages
+33_turn_4	New York Bottle Bill deposit rules for energy drinks compared to carbonated soft drinks
+33_turn_5	New York Bottle Bill deposit label requirements for wine-based drinks
+33_turn_6	Is carbonated tea specifically named in New York's Bottle Bill, or is it covered under a broader category?
+33_turn_7	New York Bottle Bill deposit law: how does it distinguish soda water from regular or mineral water for deposits?
+33_turn_8	New York Bottle Bill deposit label requirements for carbonated drinks: exceptions to deposit rules for carbonated beverage cans
+35_turn_1	Regarding boiled egg yolks, is it safe to feed them to wild birds in the garden without attracting pests?
+35_turn_2	How to prepare boiled egg shells so they are safe for wild birds and still benefit garden plants if not eaten
+35_turn_3	Does feeding boiled egg yolks to wild garden birds provide choline that benefits their brain function, or is it just a treat?
+36_turn_1	Regarding plastic disposal, how dangerous is burning plastic compared to just throwing it away?
+36_turn_2	Do modern waste incinerators with filters and scrubbers make burning plastic safer than landfilling or throwing it away?
+36_turn_3	What happens to dioxins, furans, and other toxic chemicals from plastic waste when it is disposed of in a landfill?
+36_turn_4	health effects of open burning of plastic on nearby residents
+39_turn_1	In furniture materials, does burning old wood furniture for energy really make it greener than plastic or metal?
+39_turn_2	Does a wooden chair with metal or plastic parts be less eco-friendly overall than an all-wood chair when burned for energy at end of life?
+39_turn_3	does using wood from managed forests make a difference for how long we can keep making wood furniture
+39_turn_4	How is the overall environmental impact of furniture materials such as wood, plastic, and metal determined when assessing the whole life cycle?
+40_turn_1	In ceramic recycling, is there an environmental advantage to dropping ceramics at a sorting facility instead of just throwing them away?
+40_turn_2	Can old bathroom porcelain be reprocessed into usable clay, or do the glazes interfere with recycling it?
+40_turn_3	Is recycling ceramics usually worth the effort compared with reusing them for things like garden paths or art?
+40_turn_4	Why is ceramic recycling not as common as glass or metal recycling, given that most ceramics are broken down into powder that has little value and can be spread on soil or reused in garden paths or art?
+41_turn_1	Regarding foam netting sleeves, can the EPE ones go into soft plastic recycling bins?
+41_turn_2	Do lightweight, bulky EPE foam netting sleeves make it harder for recycling facilities to accept them?
+41_turn_3	What do recycled EPE (expanded polyethylene) foam netting sleeves usually get turned into?
+41_turn_4	Do recycling programs separate EPE foam (expanded polyethylene) from other plastics?
+41_turn_5	Would contamination of EPE foam netting sleeves with other materials make them harder to recycle?
+42_turn_1	In food waste disposal, why does throwing scraps in the trash make methane, but composting doesn’t?
+42_turn_2	How much methane from landfills is captured versus escaping into the atmosphere?
+42_turn_3	Does composting food scraps at home reduce the need for chemical fertilizers?
+42_turn_4	Does using home compost make a significant difference for plant growth and soil health compared to throwing food scraps in the trash?
+42_turn_5	How much worse is methane for the climate than carbon dioxide from composting food scraps?
+44_turn_1	In data center heating, how does a heat exchanger actually move heat from servers to nearby buildings?
+44_turn_2	data center waste heat used for snow melting outdoors, heat exchanger water loop
+44_turn_3	Advantages and complications of using a data center's heat recovery water loop to supply both building heating and courtyard snow melting (such as at the ESIF data center)
+44_turn_4	How can air handlers in conference rooms connect to a data center waste heat recovery system, and is it difficult to set up?
+44_turn_5	Challenges of building a data center close enough to nearby homes or businesses to make server waste heat useful for heating
+45_turn_1	In meal kit subscriptions, does the packaging create more greenhouse gas emissions per meal than regular grocery shopping?
+45_turn_2	Meal kit subscriptions: which contributes more to greenhouse gas emission reductions, the supply chain efficiency or the reduced food waste?
+45_turn_3	Do meal kit subscription ice packs have a lower environmental impact than grocery store refrigeration per meal?
+45_turn_4	Do the extra packaging emissions from meal kit subscriptions offset the greenhouse gas emissions saved from their delivery supply chain compared to regular grocery shopping?
+45_turn_5	meal kit subscriptions greenhouse gas emissions per meal for chicken, fish, or vegetarian meals compared to grocery shopping
+45_turn_6	Do meal kit subscriptions have lower water use and energy consumption per meal than regular grocery shopping, or do they differ from the greenhouse gas emissions pattern?
+45_turn_7	meal kit delivery vs grocery store car trips: do meal kit subscriptions reduce personal vehicle trips to the store?
+47_turn_1	In organic gardening, is it okay to use non-organic potatoes as mulch under USDA rules?
+47_turn_2	Is there a USDA National Organic Program rule that prohibits using non-organic potatoes or other non-organic vegetables as mulch in an organic garden?
+47_turn_3	USDA organic rules for nutrient management when using non-organic potatoes as mulch in an organic garden
+48_turn_1	In online video streaming, does watching in higher resolution use more total energy than playing a physical disc?
+48_turn_2	Does turning on HDR while streaming very bright scenes increase a TV's power consumption even more?
+48_turn_3	Does switching a TV's streaming video from HD to 4K noticeably change the TV's power use?
+50_turn_1	In laptop power use, how can I measure exactly how much electricity my laptop uses overnight in sleep mode?
+50_turn_2	does shutting down a laptop use less power than sleep mode overnight
+50_turn_3	Effects of turning off a power strip instead of shutting down a laptop normally, for laptop power use and electricity consumption
+50_turn_4	Annual electric bill cost of leaving a laptop plugged in overnight in sleep mode or shut down versus turning off the power strip
+50_turn_5	Does sleep mode on a laptop use electricity so that it can wake up quickly?
+51_turn_1	In toilet paper labeling, how are PCF and TCF different, and does PCF always mean it’s also TCF with recycled paper?
+51_turn_2	Are there toilet papers labeled TCF (Totally Chlorine Free) but not PCF (Processed Chlorine Free)?
+51_turn_3	TCF toilet paper availability in regions where chlorine bleaching is no longer widely used
+52_turn_1	In studies on energy use and wealth, which years' data do researchers usually compare?
+52_turn_2	Does including many poorer countries make global energy use and wealth comparisons based on recent GDP per capita data (2021, 2022, 2023) less accurate?
+52_turn_3	does GDP per capita in Norway and Gulf countries skew the global average GDP per capita?
+62_turn_1	In pedal-powered electricity, how much energy could someone generate by biking for an hour?
+62_turn_2	Can one person generate enough electricity by pedaling a bike generator to power a whole apartment?
+62_turn_3	average annual household electricity consumption for a family of four
+62_turn_4	How many hours per day would a family of four need to take turns pedaling a bike generator to produce the 10,791 kilowatt-hours of electricity a typical U.S. household uses per year?
+62_turn_5	Comparing daily electricity use per household in Australia and the US, and how many hours of pedaling a family of four would need to match it
+65_turn_1	In using coffee grounds to water plants, could the slight acidity change the soil and affect plant health over time?
+65_turn_2	edible plants that tolerate coffee grounds and low light
+65_turn_3	Which plants are poorly suited to watering with coffee water because of its slight acidity?
+65_turn_4	blueberry plants growing indoors in low light, with coffee grounds water and slightly acidic soil
+65_turn_5	How should used coffee grounds be mixed into soil to keep it healthy for acid-loving edible plants like wild strawberry and blueberries grown in low light?
+66_turn_1	In watering houseplants, can reusing the runoff water cause too much salt to build up in the soil?
+66_turn_2	Would using rainwater instead of tap water make it less likely for salts to build up in houseplant soil when reusing runoff water?
+66_turn_3	white or yellow crust on top of houseplant soil caused by salt buildup from reusing runoff water
+68_turn_1	In horse commuting, how much manure would a million horses make in a year compared to cars?
+68_turn_2	Horse stable bedding waste disposal compared to automobile waste from a million horses versus cars
+68_turn_3	Would horse manure from a million horses contaminate groundwater more than car pollution does?
+68_turn_4	Would a million horses in a city make urban air smell worse than car exhaust does now?
+68_turn_5	Horse urine vs. car fluid leaks impact on city soil and water quality
+69_turn_1	Regarding tea tree oil toothpaste, what could happen if someone accidentally swallows some while brushing?
+69_turn_2	Is it risky to have tiny amounts of tea tree oil from toothpaste remain in your mouth every day?
+69_turn_3	symptoms of tea tree oil toxicity from swallowing tea tree oil toothpaste or daily exposure to tea tree oil in the mouth
+71_turn_1	In biochar production, do high costs make it hard to use for large-scale carbon capture?
+71_turn_2	Agricultural waste used for both power generation and biochar production: how does this dual use affect the amount of carbon sequestered?
+71_turn_3	Would a $200 per ton biochar price make it difficult for smaller biochar production plants to get started?
+75_turn_1	In bacon grease reuse, how can you clean it to remove bits and smoky flavor before making soap or candles?
+75_turn_2	why does boiling bacon grease with water and then adding cold water help clean bacon fat for soap or candles
+75_turn_3	how to remove cleaned bacon grease in one piece from water without bits sticking to the bottom when making soap or candles
+75_turn_4	How can you make ultra-pure bacon grease (tallow) for soap or candles, and is that different from regular tallow rendering after boiling with water to remove bits and smoky flavor?
+76_turn_1	In PVC safety, how much do chemicals like plasticizers and BPA actually affect our health or water systems?
+76_turn_2	VinylPlus PVC recycling measures to prevent release of plasticizers and phthalates
+76_turn_3	Why does burning PVC produce dioxins, and how harmful are dioxins to human health and the environment?
+76_turn_4	Risk from chemicals leaching out of PVC pipes and windows during regular use
+76_turn_5	Do German PVC pipe collection systems prevent old pipe chemicals, such as lead-based stabilizers, from leaching into the environment?
+76_turn_6	Does inconsistent composition in recycled PVC make it riskier for releasing old additives such as lead-based stabilizers and phthalates?
+78_turn_1	In vegetarian diets, how does resource use like land and water compare to eating meat, and what could that mean for sustainability?
+78_turn_2	Does cutting red meat reduce greenhouse gas emissions more than cutting other animal foods, or do other animal foods matter as much in diets?
+78_turn_3	Would redirecting the grain currently fed to livestock to direct human consumption help feed more people, and what would the effects be?
+78_turn_4	Would switching to mostly vegetarian diets change how much fertilizer and pesticides are needed overall?
+78_turn_5	What would happen to farmland and water resources if they were no longer used for raising animals in livestock farming?
+78_turn_6	Which regions would have a harder time shifting from animal farming to plant-based diets, and why?
+78_turn_7	Could plant-based farming alone still require excessive water and energy if everyone switched to a vegetarian diet?
+81_turn_1	In geothermal energy, what makes drilling deep wells risky or difficult for heating and electricity?
+81_turn_2	What are the environmental and safety consequences of toxic fluids leaking from deep geothermal wells, and does this make geothermal drilling unsafe over the long term?
+81_turn_3	Geothermal energy deep wells: challenges of connecting deep geothermal systems to the existing power grid
+81_turn_4	geothermal deep well drilling failure rate or insufficient heat/temperature frequency
+82_turn_1	In composting teabags, are there brands where you don't have to remove staples or threads first?
+82_turn_2	does polypropylene plastic in tea bags break down into microplastics in compost
+82_turn_3	How can you tell if the tea bag tag or string has a plastic coating on it?
+82_turn_4	polypropylene microplastic fibers left in compost from teabags: do they harm plant growth later?
+83_turn_1	In small solar thermal collectors, does BuildItSolar.com show both how-to guides and design comparisons for DIY projects?
+83_turn_2	Is it easy to sort through BuildItSolar.com's DIY solar thermal collector projects to find one that fits a small DIY setup?
+83_turn_3	BuildItSolar.com small DIY solar thermal collector projects: do they show real-world test results or only build instructions?
+84_turn_1	In growing rattan, how far apart should I plant the seeds in rich soil for healthy seedlings?
+84_turn_2	Does rattan need shade to sprout, or will rattan seeds germinate well in sunny locations?
+84_turn_3	Why do rattan seedlings get moved into bags with their original soil before being planted out in the field?
+84_turn_4	Rattan field planting 7 by 3 meter spacing: effects of not following spacing on later harvesting difficulty
+84_turn_5	How can you visually tell when a rattan stem is ready to harvest/cut when growing rattan?
+84_turn_6	Rattan growth in well-draining soil versus soil that stays damp most of the time
+84_turn_7	Effect of planting depth and watering frequency on rattan seed germination and sprouting
+84_turn_8	Why is it better to transplant rattan seedlings during the rainy season rather than waiting for drier weather?
+84_turn_9	Protective gloves and gear for harvesting rattan, to guard against thorns and insects
+84_turn_10	How do you prevent weeds from crowding out rattan seedlings in bags before planting them out?
+84_turn_11	rattan cutting: why leave a small stub above ground instead of cutting lower
+84_turn_12	Rattan cultivation: what supports or structures (poles or trees) are used to let rattan climb?
+87_turn_1	In pesticide labeling, how can I spot imidacloprid or other neonicotinoids on product labels?
+87_turn_2	Popular pesticide brands to avoid if I want to avoid imidacloprid
+87_turn_3	Which neonicotinoid pesticides besides imidacloprid should I watch out for on product labels?
+87_turn_4	Has Bayer's imidacloprid made neonicotinoids more common in garden products?
+90_turn_1	In recycled fashion, does making clothes from old fabric really use less energy than making new ones?
+90_turn_2	Does buying second-hand clothing reduce chemical emissions from the textile industry?
+90_turn_3	Water and land savings from recycled fabric versus second-hand clothing compared to new clothing
+92_turn_1	Regarding sea water use, how much fresh water can a solar still make per square metre each day?
+92_turn_2	solar still double-glazed multi-effect still fresh water yield per square metre per day compared to single-effect solar still
+92_turn_3	seawater greenhouse combined with solar stills fresh water output per square metre per day compared to daily water needs
+92_turn_4	At what point do multi-effect or double-glazed solar stills, or a seawater greenhouse combined with solar stills, take up too much space or become too difficult to keep running?
+94_turn_1	In renewable energy projects, how much more energy do they need to make than they use to grow on their own?
+94_turn_2	EROEI (energy return on energy invested) lower end: does a low EROEI slow the growth rate of renewable energy projects like solar panels?
+94_turn_3	How do photovoltaic (PV) systems compare to conventional power plants in energy return on energy invested (EROEI), i.e., how much surplus energy they produce relative to the energy used to build them?
+94_turn_4	Can a PV solar system with an EROEI of 6 to 12 and a short energy payback time double its size quickly using only the energy it produces?
+95_turn_1	In air freshening, how well does fresh basil work compared to regular air fresheners for making a room smell nice?
+95_turn_2	Does wrapping herb leaves in newspaper help remove car odors compared to other natural air freshening methods?
+95_turn_3	Do rosemary or thyme last longer than coffee grounds at keeping a car smelling fresh?
+97_turn_1	In mosquito control, how do DIY magnetic window screens actually keep mosquitoes out, and are they easy to install?
+97_turn_2	DIY magnetic window screens durability in humid climates: do they hold up well or wear out fast?
+97_turn_3	DIY magnetic window screens types for different window shapes or sizes
+97_turn_4	does taping up netting over a window keep mosquitoes and other insects out, or do bugs still get in?
+100_turn_1	In solar hot water setups, does using a pump mean the tank doesn’t have to be higher than the panels?
+100_turn_2	best pipe insulation for solar hot water systems to retain heat
+100_turn_3	Does the placement of pipe connections on a solar hot water tank matter as much when a pump is used instead of passive thermosiphoning?
+100_turn_4	Heat loss through pipes in solar hot water systems when the storage tank is farther from the solar panels
+101_turn_1	In drink packaging, does using recycled aluminum for cans save a lot more energy than making new ones from ore?
+101_turn_2	energy savings from recycling glass versus making new glass bottles
+101_turn_3	Is it a problem that plastic bottles are usually recycled into other products instead of new plastic bottles?
+105_turn_1	In bell siphon design, how does the shape help fill slowly but drain quickly, and why does that matter?
+105_turn_2	What is the advantage of adding a reducer or venturi, as in Affnan's bell siphon design, over using a plain stand pipe?
+105_turn_3	Are the newer tweaks to bell siphon design, such as reducers or venturis like in Affnan's design, actually making these siphons run smoother, or is it mostly minor changes?
+105_turn_4	How do you choose pipe and reducer sizes for a bell siphon in a growbed so it drains quickly without getting stuck in equilibrium trickle flow?
+107_turn_1	In boreal forests, how can raising animals and managing trees work well together?
+107_turn_2	Can silvopasture in boreal forests combine tree harvesting and livestock grazing without disrupting the forest's ecological balance?
+107_turn_3	Is establishing silvopasture or wood pasture on an old pasture a fundamentally different approach than integrating livestock grazing and tree harvesting in an existing boreal forest?

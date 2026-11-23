@@ -1,4 +1,4 @@
-"""Rewrite each turn into a standalone query and write queries/<variant>/<split>/<domain>.tsv plus a JSON report."""
+"""Run an LLM variant (rewrite or note) per turn; write queries/<variant>/<split>/<domain>.tsv and a JSON report."""
 
 import argparse
 import json
@@ -11,11 +11,20 @@ sys.path.insert(0, str(REPO_ROOT))
 
 from src.data import DOMAINS, SPLITS, Turn, load_turns  # noqa: E402
 from src.llm import LLMError, complete_many, resolve_model, usage_summary  # noqa: E402
-from src.rewrite import build_messages, clean_query, single_line, template_path, unsupported_terms  # noqa: E402
+from src.queries import validate_tsv, write_tsv  # noqa: E402
+from src.rewrite import (  # noqa: E402
+    build_messages,
+    clean_note,
+    clean_query,
+    single_line,
+    template_path,
+    unsupported_terms,
+    variant_kind,
+)
 
 PRICE_IN, PRICE_OUT = 0.10, 0.50  # USD per million input / output tokens
 LLM_KWARGS = {"reasoning_effort": "low", "max_tokens": 1024}
-TABLE_COLS = ["turns", "turn1_kept", "rewritten", "llm_calls", "cache_hits", "fallbacks", "flagged"]
+TABLE_COLS = ["turns", "turn1_kept", "rewritten", "llm_calls", "cache_hits", "fallbacks", "flagged", "truncated"]
 SUM_KEYS = TABLE_COLS + ["input_tokens", "output_tokens"]
 
 
@@ -25,7 +34,7 @@ def cost_usd(input_tokens: int, output_tokens: int) -> float:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--variant", default="rewrite-v1")
+    parser.add_argument("--variant", default="rewrite-v1", help="prompts/<variant>.txt; reason-* variants produce notes")
     parser.add_argument("--split", default="dev", choices=SPLITS)
     parser.add_argument("--domains", nargs="+", choices=DOMAINS, help="default: all 11 domains")
     parser.add_argument("--limit", type=int, help="first N turns per domain; output goes to <split>-limit<N>/")
@@ -33,25 +42,33 @@ def parse_args() -> argparse.Namespace:
 
 
 def rewrite_domain(turns: list[Turn], variant: str) -> tuple[list[str], dict]:
-    """Return one query per turn (in order) and the domain's stats, fallback reasons and flagged terms."""
+    """Return one text per turn (in order) and the domain's stats; "rewritten" counts turns whose text came from the LLM."""
+    kind = variant_kind(variant)
     before = usage_summary()
-    queries = [single_line(t.query) for t in turns]
+    texts = [single_line(t.query) for t in turns]  # the original query is the fallback text
     to_send = [(i, m) for i, t in enumerate(turns) if (m := build_messages(t, variant)) is not None]
     outputs = complete_many([m for _, m in to_send], return_exceptions=True, **LLM_KWARGS)
     fallbacks: dict[str, str] = {}
     flagged: dict[str, list[str]] = {}
+    truncated = 0
     for (i, _), output in zip(to_send, outputs):
         topic = turns[i].topic_id
         if isinstance(output, LLMError):
             fallbacks[topic] = f"LLMError: {output}"
-        elif isinstance(output, BaseException):
+            continue
+        if isinstance(output, BaseException):
             raise output
-        elif cleaned := clean_query(output):
-            queries[i] = cleaned
-            if terms := unsupported_terms(cleaned, turns[i]):
-                flagged[topic] = terms
+        if kind == "note":
+            cleaned, cut = clean_note(output)
+            truncated += cut
         else:
+            cleaned = clean_query(output)
+        if not cleaned:
             fallbacks[topic] = f"empty after cleaning: {output!r}"
+            continue
+        texts[i] = cleaned
+        if kind == "rewrite" and (terms := unsupported_terms(cleaned, turns[i])):
+            flagged[topic] = terms
     after = usage_summary()
     stats = {
         "turns": len(turns),
@@ -61,43 +78,20 @@ def rewrite_domain(turns: list[Turn], variant: str) -> tuple[list[str], dict]:
         "cache_hits": after["cache_hits"] - before["cache_hits"],
         "fallbacks": len(fallbacks),
         "flagged": len(flagged),
+        "truncated": truncated,
         "input_tokens": after["input_tokens"] - before["input_tokens"],
         "output_tokens": after["output_tokens"] - before["output_tokens"],
         "fallback_reasons": fallbacks,
         "flagged_terms": flagged,
     }
-    return queries, stats
-
-
-def write_tsv(path: Path, turns: list[Turn], queries: list[str]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8", newline="\n") as fh:
-        for turn, query in zip(turns, queries):
-            fh.write(f"{turn.topic_id}\t{query}\n")
-
-
-def validate(path: Path, turns: list[Turn]) -> list[str]:
-    """Re-read a written TSV and return a list of problems (empty if valid)."""
-    rows = [line.split("\t") for line in path.read_text(encoding="utf-8").split("\n")[:-1]]
-    problems = []
-    if bad := [n for n, row in enumerate(rows, 1) if len(row) != 2]:
-        problems.append(f"{len(bad)} rows without exactly 2 fields (first: line {bad[0]})")
-    ids = [row[0] for row in rows]
-    if len(rows) != len(turns):
-        problems.append(f"{len(rows)} rows, expected {len(turns)} turns")
-    if len(set(ids)) != len(ids):
-        problems.append(f"{len(ids) - len(set(ids))} duplicate topic_ids")
-    if set(ids) != {t.topic_id for t in turns}:
-        problems.append("topic_ids differ from load_turns")
-    if empty := sum(1 for row in rows if len(row) < 2 or not row[1].strip()):
-        problems.append(f"{empty} empty queries")
-    return problems
+    return texts, stats
 
 
 def main() -> int:
     args = parse_args()
     if not template_path(args.variant).is_file():
         sys.exit(f"no template for variant {args.variant!r}: expected {template_path(args.variant)}")
+    kind = variant_kind(args.variant)
     domains = args.domains or list(DOMAINS)
     split_dir = args.split if args.limit is None else f"{args.split}-limit{args.limit}"
     out_dir = REPO_ROOT / "queries" / args.variant / split_dir
@@ -106,10 +100,10 @@ def main() -> int:
     per_domain: dict[str, dict] = {}
     for domain in domains:
         turns = [t for t in all_turns if t.domain == domain][: args.limit]
-        queries, stats = rewrite_domain(turns, args.variant)
+        texts, stats = rewrite_domain(turns, args.variant)
         path = out_dir / f"{domain}.tsv"
-        write_tsv(path, turns, queries)
-        problems = validate(path, turns)
+        write_tsv(path, [(t.topic_id, text) for t, text in zip(turns, texts)])
+        problems = validate_tsv(path, turns)
         if stats["llm_calls"] + stats["cache_hits"] != stats["turns"] - stats["turn1_kept"]:
             problems.append("LLM calls + cache hits != turns sent to the LLM")
         stats.update(
@@ -128,6 +122,7 @@ def main() -> int:
     )
     report = {
         "variant": args.variant,
+        "kind": kind,
         "split": args.split,
         "limit": args.limit,
         "model": resolve_model(),
@@ -160,7 +155,8 @@ def main() -> int:
         for problem in s["problems"]:
             print(f"INVALID {domain}: {problem}")
 
-    print(f"\nflagged rate: {totals['flagged']}/{totals['rewritten']} rewritten turns = {totals['flagged_rate']:.1%}")
+    if kind == "rewrite":
+        print(f"\nflagged rate: {totals['flagged']}/{totals['rewritten']} rewritten turns = {totals['flagged_rate']:.1%}")
     print("usage_summary():", usage_summary())
     print(f"estimated cost: ${totals['cost_usd']:.4f} (at ${PRICE_IN:.2f} / ${PRICE_OUT:.2f} per million input / output tokens)")
     print(f"wrote {len(per_domain)} files to {out_dir.relative_to(REPO_ROOT)}/ and {report_path.relative_to(REPO_ROOT)}")

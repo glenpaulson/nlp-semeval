@@ -1,0 +1,13 @@
+domain,topics,missing_topics,ndcg_cut_10
+biology,247,0,0.225017
+drones,104,0,0.140007
+earth_science,321,0,0.275719
+economics,196,0,0.157279
+hardware,130,0,0.147211
+law,164,0,0.104751
+medicalsciences,139,0,0.118781
+politics,159,0,0.160943
+psychology,234,0,0.220784
+robotics,184,0,0.184732
+sustainable_living,235,0,0.285057
+macro_avg (11 domains),2113,0,0.183662
