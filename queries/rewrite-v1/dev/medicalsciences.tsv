@@ -1,0 +1,44 @@
+ex_34769_turn_1	In dieting, does not getting enough sleep change whether you lose more fat or more muscle?
+ex_34769_turn_2	Is it harder to stick to a diet when sleep-deprived because you feel hungrier or less satisfied after meals?
+ex_34769_turn_3	Does lack of sleep make it easier to regain weight after dieting?
+ex_34719_turn_1	In inert gas asphyxiation, why does breathing pure inert gas make you pass out faster than just holding your breath?
+ex_34719_turn_2	Does the oxygen remaining in the lungs let you stay conscious longer when you hold your breath, compared with breathing pure inert gas?
+ex_34719_turn_3	What happens to the oxygen partial pressure in the lungs when switching from breathing air to breathing pure inert gas?
+ex_34687_turn_1	In bystander CPR after heart surgery, should someone start chest compressions right away or wait because of the person’s surgery?
+ex_34687_turn_2	Would delaying CPR after heart surgery make brain damage more likely?
+ex_34687_turn_3	Cases where regular CPR should not be performed on a patient who has had open heart surgery
+ex_34651_turn_1	In glucose meters, how come they only pick up glucose and not other sugars like sucrose in water?
+ex_34651_turn_2	Why doesn't glucose oxidase react with sucrose? Structural reasons sucrose is not recognized by the glucose oxidase enzyme in glucose meters
+ex_34651_turn_3	Does the hydrogen peroxide produced by the glucose oxidase reaction trigger the reading on a glucose meter?
+ex_34651_turn_4	Does the oxygen involved in the glucose oxidase reaction explain why glucose meters ignore sucrose in water?
+ex_34599_turn_1	Regarding COVID vaccines, is there any evidence they can cause long COVID symptoms compared to being unvaccinated?
+ex_34599_turn_2	can COVID vaccination trigger long COVID symptoms biologically, and what mechanisms have been proposed
+ex_34599_turn_3	Do the lack of large controlled trials make it harder to trust the evidence that COVID vaccines do not increase long COVID risk, or the reports of nerve-related symptoms after COVID vaccination?
+ex_34486_turn_1	In spinal cord anatomy, how does the way gray and white matter are arranged lead to those bigger areas in the cervical and lumbar regions?
+ex_34486_turn_2	Where are the motor neuron cell bodies for the arms and legs located in the cervical and lumbar regions of the spinal cord, in the ventral gray horn?
+ex_34486_turn_3	Besides motor neurons controlling limb muscles, what other functions occur in the enlarged gray matter of the cervical and lumbar spinal cord enlargements?
+ex_34329_turn_1	In condom sizing, what exactly does 'nominal width' mean and how do manufacturers figure it out?
+ex_34329_turn_2	why is diameter not used for condom sizing instead of nominal width (flat width of a condom laid flat)
+ex_34329_turn_3	Why is condom nominal width smaller than the diameter obtained by dividing girth by pi?
+ex_34296_turn_1	In cold water immersion, how does holding your breath make healthy people more likely to have heart rhythm problems?
+ex_34296_turn_2	Is cold water immersion or breath holding safer or riskier than a treadmill test for detecting arrhythmias?
+ex_34296_turn_3	Does the stronger vagal response during cold water immersion with breath holding correlate with more bradyarrhythmias in people who already have hidden heart issues?
+ex_34296_turn_4	What arrhythmias or cardiac abnormalities can standard tests (such as treadmill exercise testing) fail to detect when the trigger is cold shock from cold water immersion?
+ex_34296_turn_5	Is cold water face immersion with breath holding practical to perform in a regular clinic, or is it too risky?
+ex_34296_turn_6	safe laboratory protocol for cold water face immersion with breath holding to test for arrhythmias
+ex_34029_turn_1	In erythropoietic protoporphyria, why is it so hard to treat the disease by just giving the missing ferrochelatase enzyme?
+ex_34029_turn_2	Why do oral enzyme supplements only work when the enzyme acts outside cells, and is it because intracellular enzymes like ferrochelatase are hard to deliver to mitochondria in erythropoietic protoporphyria?
+ex_34029_turn_3	What prevents exogenous ferrochelatase from entering the mitochondria to reach the inner mitochondrial membrane when added from outside the cell?
+ex_33780_turn_1	In caffeine metabolism, how do things like smoking or birth control pills change how fast caffeine leaves the body?
+ex_33780_turn_2	Would it be difficult to speed up caffeine clearance from the body because caffeine distributes quickly throughout the whole system?
+ex_33780_turn_3	Ways to speed up paraxanthine clearance from the body compared to caffeine
+ex_33726_turn_1	In vaccine safety, is it okay for people to get SHINGRIX at the same time as TWINRIX or AREXVY, or is there a higher risk of side effects?
+ex_33726_turn_2	Upcoming studies on co-administration of SHINGRIX with other vaccines such as influenza and COVID-19 vaccines
+ex_33726_turn_3	Do SHINGRIX and AREXVY (or SHINGRIX and Fluad or COVID-19 vaccines) need to be given in different spots on the body when administered together?
+ex_33726_turn_4	How do doctors decide whether to co-administer SHINGRIX with other vaccines like TWINRIX, AREXVY, flu, or COVID-19 vaccines when there is limited data on giving them together?
+ex_32699_turn_1	In lead poisoning, how does the amount of lead someone eats each day affect their blood lead levels over time?
+ex_32699_turn_2	CDC blood lead level limit: maximum daily lead intake in micrograms that keeps blood lead below the CDC reference level in lead poisoning
+ex_32699_turn_3	Blood lead level thresholds at which doctors intervene for lead poisoning in children and adults
+ex_32435_turn_1	In medical radiography, does it matter that gamma rays come from the nucleus while x-rays come from outside it?
+ex_32435_turn_2	Would using gamma rays, which are more powerful than X-rays, make it harder to get clear images for everyday medical radiography scans?
+ex_32435_turn_3	how is gamma radiation used in medicine besides regular medical radiography scans

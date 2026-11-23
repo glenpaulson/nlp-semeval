@@ -189,14 +189,20 @@ def complete(
     return text
 
 
-def complete_many(list_of_messages: list[list[dict[str, Any]]], concurrency: int = 8, **kwargs: Any) -> list[str]:
-    """Run complete() over many message lists in a thread pool and return texts in input order."""
-    results: list[str] = [""] * len(list_of_messages)
+def complete_many(
+    list_of_messages: list[list[dict[str, Any]]],
+    concurrency: int = 8,
+    return_exceptions: bool = False,
+    **kwargs: Any,
+) -> list[Any]:
+    """Run complete() in a thread pool, results in input order; return_exceptions=True puts failures in place."""
+    results: list[Any] = [None] * len(list_of_messages)
     with ThreadPoolExecutor(max_workers=concurrency) as pool:
         futures = {pool.submit(complete, messages, **kwargs): i for i, messages in enumerate(list_of_messages)}
         try:
             for future in tqdm(as_completed(futures), total=len(futures), desc="LLM"):
-                results[futures[future]] = future.result()
+                error = future.exception() if return_exceptions else None
+                results[futures[future]] = error if error is not None else future.result()
         except BaseException:
             pool.shutdown(wait=False, cancel_futures=True)  # finished results stay cached, so a rerun resumes
             raise

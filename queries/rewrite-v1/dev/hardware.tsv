@@ -1,0 +1,58 @@
+ex_19234_turn_1	In using selfie sticks with Android phones, would a Lightning-to-USB-C adapter actually let the shutter button work, or is it just for Apple devices?
+ex_19234_turn_2	Would a Lightning-to-USB-C adapter translate the control signals that a selfie stick's shutter button sends, or would it not translate them at all, when used with an Android phone?
+ex_19234_turn_3	selfie stick made for Android phones with shutter button vs Lightning-to-USB-C adapter
+ex_19103_turn_1	In weighing scales, does putting the scale in the same spot really make your weight readings more accurate?
+ex_19103_turn_2	What happens to a bathroom scale's weight reading if its feet are not all on the same floor tile?
+ex_19103_turn_3	Does using a weight-tracking app with a smart scale make it easier to track weight or spot changes over time?
+ex_19043_turn_1	In planning a CPU and motherboard upgrade, what features should I check to make sure everything works well and is future-proof?
+ex_19043_turn_2	signs that CPU is bottlenecking newer graphics card during CPU and motherboard upgrade
+ex_19043_turn_3	NVMe SSD game load times improvement compared to current storage
+ex_18978_turn_1	In choosing a laptop for Linux, how many external monitors can you realistically run at once, and are there GPU issues to watch for?
+ex_18978_turn_2	Lenovo X1 Carbon Gen 10 Fedora external monitors: do you need adapters for both HDMI and Thunderbolt (USB-C) displays, or does the laptop include enough built-in ports?
+ex_18978_turn_3	Lenovo T480 Linux compatibility with two external monitors
+ex_18640_turn_1	In choosing a GPU for Ubuntu 24.04, would a used GTX 1070 or 1080 work better for text-to-speech than a mining card like the P102-100?
+ex_18640_turn_2	P102-100 vs GTX 1080 memory bandwidth impact on tortoise-tts speed
+ex_18640_turn_3	Would the extra VRAM or CUDA cores of the P102-100 versus a GTX 1080 make a noticeable difference for text-to-speech (Tortoise-TTS) speed on Ubuntu 24.04?
+ex_18640_turn_4	P102-100 GPU price under $100 used availability
+ex_18337_turn_1	For home office printers, is it easy to connect both with a cable and over WiFi for more flexibility?
+ex_18337_turn_2	home office printer mobile printing with AirPrint or Bluetooth
+ex_18337_turn_3	home office printer with automatic document feeder (ADF) for scanning multiple pages at once and two-sided (duplex) scanning
+ex_18337_turn_4	home office printer print speed at least 23 pages per minute in color and black
+ex_17938_turn_1	Regarding old computers, how much faster would everyday tasks and light video editing feel if I swapped the hard drive for an SSD?
+ex_17938_turn_2	Would upgrading an old computer's RAM to 16GB stop it from freezing during everyday tasks and light video editing?
+ex_17938_turn_3	Would Xubuntu or another lightweight Linux distribution run better on old computer hardware with 16GB RAM and an SSD replacing the hard drive?
+ex_15902_turn_1	In using an eGPU with VMware Fusion, does turning on 'Prefer External GPU' actually help with CADD software performance in a Windows VM?
+ex_15902_turn_2	Is the performance boost from an eGPU noticeable for CADD software in a Windows VM running on VMware Fusion, or does Fusion bottleneck it?
+ex_15902_turn_3	Does an eGPU need to be connected before starting a Windows VM in VMware Fusion on Mac for it to help with CADD software performance?
+ex_15902_turn_4	VMware Fusion external GPU (eGPU) support: what happens when using an older GPU that macOS doesn't support, does Fusion fail to detect it?
+ex_15430_turn_1	In building a PC with a Ryzen 5600G or 5600X, does Crossfire or SLI matter anymore when thinking about future GPU upgrades?
+ex_15430_turn_2	Is it easier to set up a PC with a Ryzen 5600G before installing a graphics card, compared to a Ryzen 5600X?
+ex_15430_turn_3	Ryzen 5600G adding discrete graphics card later problems
+ex_15430_turn_4	Can the Ryzen 5600G's integrated graphics run extra monitors when a discrete GPU is installed, or does it switch over completely?
+ex_15078_turn_1	In laptop RAM upgrades, is it okay to mix different brands or speeds, or should I match my current module for best results?
+ex_15078_turn_2	Would matching laptop RAM sticks (same capacity, speed, and timings) make everyday tasks feel faster, or is the difference mostly in benchmarks?
+ex_15078_turn_3	How can I tell which way a laptop RAM stick should be oriented when installing it, and could I install it incorrectly?
+ex_15078_turn_4	quick way to check laptop specs online before ordering laptop RAM
+ex_15078_turn_5	Precautions before opening a laptop and swapping SODIMM RAM modules
+ex_15078_turn_6	How can I double-check the number of pins on a laptop's DDR4 SODIMM before ordering, and do most DDR4 SODIMMs fit all laptops?
+ex_15078_turn_7	Would upgrading a laptop's RAM to 32 GB noticeably speed up heavy apps on an AMD chip?
+ex_15078_turn_8	How do I tell if a laptop RAM SODIMM is clicked in all the way when installing it?
+ex_15078_turn_9	DDR4 SODIMM laptop RAM voltage mismatch with existing module: is it a big deal if the new RAM's voltage differs from the current one?
+ex_13449_turn_1	In choosing a research laptop, how much would having faster and expandable RAM really help with big datasets and heavy computations?
+ex_13449_turn_2	Would adding more CPU cores on the Dell XPS laptop speed up running simulations for research computing?
+ex_13449_turn_3	Dell XPS laptop soldered RAM problem for research tools needing faster RAM later
+ex_11412_turn_1	In remote gaming setups, can you use an Android box with your TV to stream games and connect a PS4 controller easily?
+ex_11412_turn_2	thin client Moonlight streaming performance compared to Nvidia Shield, trade-offs
+ex_11412_turn_3	fanless Windows PC quiet enough to handle VR and game controllers
+ex_11412_turn_4	Can you stream emulators or VR games through Steam In-Home Streaming, or does it only work with regular PC games?
+ex_11412_turn_5	What causes video to become choppy or controller input to lag when streaming games with Moonlight or Steam In-Home Streaming?
+ex_11412_turn_6	wireless VR streaming to another room from a gaming PC using Moonlight or Steam In-Home Streaming
+ex_10266_turn_1	In laptop upgrades, does adding a SATA SSD make more sense than replacing my NVMe SSD for balancing cost and storage?
+ex_10266_turn_2	does switching from a SATA SSD to an NVMe SSD make code builds faster in a laptop, or is CPU the main bottleneck
+ex_10266_turn_3	Samsung 860 EVO SATA SSD vs NVMe SSD reliability and value for laptop upgrade
+ex_10266_turn_4	Downsides of keeping an existing NVMe SSD for main apps and using a SATA SSD for storage in a laptop
+ex_10266_turn_5	Would using an old HDD for extra storage noticeably slow down working with big files on a laptop that also has an NVMe SSD and a SATA SSD?
+ex_9583_turn_1	In home networking, are there any affordable dual WAN gigabit routers with automatic failover that work well for small setups?
+ex_9583_turn_2	Is the Ubiquiti EdgeRouter 8 worth the extra cost over cheaper dual WAN gigabit routers for home use, or do cheaper models handle automatic failover just as well?
+ex_9583_turn_3	How difficult is it to configure dual WAN automatic failover on the Ubiquiti EdgeRouter Lite (ERLite-3) and other cheaper EdgeRouter models, and does the setup process include guided instructions?
+ex_9583_turn_4	EdgeRouter X vs EdgeRouter Lite automation features missing for home network automation

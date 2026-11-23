@@ -1,0 +1,15 @@
+Below is a conversation between a user and an assistant, followed by the user's current question.
+
+<conversation>
+{history}
+</conversation>
+
+<current_question>
+{query}
+</current_question>
+
+Rewrite the current question as ONE standalone search query that can be understood without the conversation.
+- Resolve pronouns and references (such as "it", "that method", "the second one") using the conversation.
+- Keep all technical terms.
+- Use only names, terms and details that appear in the conversation or the current question; do not add laws, dates, names, acronym expansions or other details from your own knowledge.
+- Output only the query, on one line, with no explanation.

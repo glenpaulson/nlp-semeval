@@ -1,0 +1,99 @@
+0_turn_1	In belief formation, can our confidence in something shift even if we don't get new information?
+0_turn_2	Mental habits or cognitive biases that make people change their beliefs or confidence without new information
+0_turn_3	Does vague or ambiguous information make people feel more certain they are right, in belief formation?
+0_turn_4	Can cognitive biases or mental habits cause people to drop a belief without any new information?
+2_turn_1	In fNIRS, how does using two wavelengths help us tell apart oxygenated and deoxygenated hemoglobin?
+2_turn_2	In fNIRS, what happens if only one wavelength is used to measure hemoglobin concentration: does it blur oxygenated and deoxygenated hemoglobin together?
+2_turn_3	Does using two wavelengths in fNIRS also help account for how light scatters differently through brain tissue?
+2_turn_4	fNIRS assuming constant scattering and relative changes: does this make it difficult to compare results between different people or sessions?
+6_turn_1	In emotions and feelings, how do they actually shape the choices we make in our brains?
+6_turn_2	Do somatic markers explain why our bodies react physically when we feel strong emotions?
+6_turn_3	How does the brain send signals to speed up the heart when a person is scared?
+6_turn_4	Do bodily signals like a racing heart or gut feeling shape how we experience emotions in the moment?
+6_turn_5	Which brain regions integrate emotional signals, such as somatic markers and body-state changes, during decision-making?
+14_turn_1	In personality disorders, how does looking at traits instead of strict categories change how we see opposites like histrionic and avoidant types?
+14_turn_2	Would viewing histrionic and avoidant personality disorders as points on a trait dimensional spectrum make it clearer how opposite their attention needs are?
+14_turn_3	Does using dimensional trait models instead of categorical diagnoses make it harder to identify individuals who want to be unnoticed, such as those high in avoidant traits like anxiousness, self-consciousness, and low gregariousness?
+15_turn_1	In brain imaging studies, how do scientists use things like GFP to spot Sst-expressing neurons?
+15_turn_2	Sst-expressing neurons: does "Sst-expressing" refer to the Sst protein, its mRNA, or a GFP label?
+15_turn_3	How do neurons start expressing Sst or Vip genes, and what turns on somatostatin (Sst) or Vip gene transcription in a neuron?
+23_turn_1	In describing people, why do we sometimes use animal traits, like calling someone a lion or a fox?
+23_turn_2	historical use of animal traits to describe humans versus gods or legends, zoomorphism
+23_turn_3	Is zoomorphism applied differently to objects or gods than to humans?
+23_turn_4	How do you distinguish zoomorphism from anthropomorphism?
+24_turn_1	In psychiatry, how do professionals respond to grandiose delusions without directly arguing about the person's beliefs?
+24_turn_2	Does avoiding arguments with people who have grandiose delusions (not directly challenging their beliefs, but validating feelings and using supportive, non-judgemental communication) make them more open to getting mental health help?
+24_turn_3	specific tips for communicating with someone experiencing grandiose delusions in psychiatry
+24_turn_4	How do psychiatrists determine whether a belief is a delusion when no one else notices it?
+27_turn_1	In language and bias, what do you call it when the same action sounds better or worse depending on who's doing it?
+27_turn_2	Why do phrases like "I am firm" and "obstinate" or "pigheaded" feel so different when they describe the same behavior, given Russell Conjugation (emotive conjugation)?
+27_turn_3	Why do people judge themselves differently from others because of how actions are worded, in the context of Russell Conjugation (emotive conjugation)?
+27_turn_4	Russell Conjugation emotive conjugation origin: did Bertrand Russell create the examples 'firm' and 'obstinate' or 'pigheaded', or did others later contribute to the idea?
+27_turn_5	Frank Luntz methods for finding words that trigger the strongest emotional reactions
+27_turn_6	Is Russell Conjugation (emotive conjugation) deliberately used by politicians to make their side sound better?
+28_turn_1	In multilevel modeling for RCTs, how do you handle repeated measures for each participant over time?
+28_turn_2	Is there a real difference between calling a multilevel model and a mixed effects model when analyzing repeated measures for each participant over time in randomized controlled trials?
+28_turn_3	Do reviewers view "hierarchical" and "multilevel" as meaning different things in the context of multilevel or mixed effects models for RCTs with repeated measures, or is it just a matter of personal preference?
+31_turn_1	In split-brain patients, can they still play piano pieces they learned before surgery?
+31_turn_2	Can split-brain patients learn new piano pieces that require both hands to work together after the surgery?
+31_turn_3	split-brain patients reading treble and bass clefs simultaneously: does hemispheric separation make it easier or harder?
+31_turn_4	split-brain patients reading two music staves (treble and bass clefs) simultaneously while playing piano, how the brain processes both lines of music
+33_turn_1	In social psychology, what do you call it when someone's expectations actually make others act that way?
+33_turn_2	Evidence for and limits of the Pygmalion effect (self-fulfilling prophecy of high expectations improving performance)
+33_turn_3	Why is it called the Pygmalion effect in social psychology?
+33_turn_4	Real-life examples of the Pygmalion effect in classrooms, where teachers' expectations changed how students performed
+33_turn_5	Can consistently high expectations of someone change how a relationship develops over time, as in the Pygmalion effect?
+33_turn_6	Pygmalion effect in friendships and close relationships on Wikipedia
+36_turn_1	In sexual orientation, is there real evidence that genetics, like the Xq28 region, play a role in being gay?
+36_turn_2	Are genetic study results on same-sex sexual behavior difficult for scientists to replicate consistently?
+36_turn_3	Does genetic research on same-sex sexual behavior show that sexual orientation cannot be changed by conversion therapy or other attempts to talk someone into or out of being gay?
+39_turn_1	In brain activity, what keeps our thoughts from getting stuck and helps us shift to new ones?
+39_turn_2	What makes lingering neuron patterns stop so the brain can shift to thinking about something else, in terms of chaotic itinerancy and quasi-attractors?
+39_turn_3	how does the brain end one thought and start another without external input, through chaotic itinerancy and refractory periods
+40_turn_1	In gender roles, why is there a common word for tomboy but not for boys who act feminine?
+40_turn_2	why does the word 'effeminate' lack the positive connotations that 'tomboy' has acquired, in gender roles
+40_turn_3	Do people assume a boy who acts feminine must be gay because the word "effeminate" comes from Latin meaning "made feminine, emasculated, weakened"?
+46_turn_1	In temporal encoding, are there brain regions besides the hippocampus that help us sense time?
+46_turn_2	Do time cells in the hippocampus track time the same way as the frontal cortex, parietal cortex, basal ganglia, and cerebellum in temporal encoding?
+46_turn_3	Time cells and place cells in the hippocampus: is there overlap in where they fire, or are they separate?
+49_turn_1	In psychology, what's the term for thinking a solution was obvious after you already know the answer?
+49_turn_2	hindsight bias and feeling like you could have solved a problem yourself after seeing the answer
+49_turn_3	Other names for hindsight bias, such as "knew-it-all-along phenomenon
+55_turn_1	In psychology, why do people say they didn't want something after not getting it?
+55_turn_2	Is the fox in Aesop's "The Fox and the Grapes" doing the same thing as people who say they didn't want something after not getting it, i.e., reducing disappointment by convincing themselves the desired thing wasn't really desirable (sour grapes / cognitive dissonance)?
+55_turn_3	How does the fox's reaction in "The Fox and the Grapes" shift from protecting his ego to actually changing how he feels about the grapes?
+57_turn_1	In understanding revenge, how can looking at biology, psychology, and culture together help explain why people seek it?
+57_turn_2	revenge urge spilling over into group decisions or politics
+57_turn_3	Evidence that the human urge for revenge helped early humans survive or stay safe in the past
+57_turn_4	How does growing up in different cultures affect how likely someone is to want revenge?
+57_turn_5	psychology of deciding whether revenge restores fairness: cognitive and emotional processes behind revenge decisions
+57_turn_6	Does the feeling of injustice or unfairness motivate revenge more than anger alone?
+74_turn_1	In brain science, how is studying thoughts and feelings different from studying brain cells themselves?
+74_turn_2	Is the difference between psychology and neuroscience that psychology studies what happens with thoughts and feelings, while neuroscience studies how it works inside the brain through brain cells?
+74_turn_3	Is genetics like psychology in that it describes which traits show up but doesn't explain the chemical details behind them, the way neuroscience opens up the brain to show how thoughts and feelings are produced?
+74_turn_4	Did figuring out the shape of DNA shift biology from just observing what happens to understanding how it works inside?
+74_turn_5	Why do psychologists joke about wanting what neuroscientists have?
+77_turn_1	In workplace feedback, what does it mean when criticism is sandwiched between positive comments?
+77_turn_2	Does sandwiching criticism between positive comments make workplace feedback less effective?
+77_turn_3	Who should receive sandwich feedback in the workplace: only direct reports, or anyone on the team?
+84_turn_1	In reinforcement theory, how do researchers see giving a drug as both positive and negative reinforcement?
+84_turn_2	How do researchers determine whether pleasure or stress relief (negative reinforcement) causes a monkey to press a lever more for a drug?
+84_turn_3	Is it hard to determine whether a drug is acting as positive or negative reinforcement, such as distinguishing pleasure from stress relief in a monkey pressing a lever, when the two overlap?
+84_turn_4	How have researchers' views on drug use as positive versus negative reinforcement, and on distinguishing pleasure from stress relief as the cause of drug-seeking behavior, changed over the years?
+87_turn_1	In synesthesia, what makes an experience truly cross-sensory and automatic?
+87_turn_2	Do programmers who feel movement when thinking about code experience synesthesia similar to letter-color synesthesia, or is it something different?
+87_turn_3	Does the consistency of color experiences with music distinguish synesthesia from simply imagining things?
+88_turn_1	In decision making, why do people tend to follow the crowd when choosing between options?
+88_turn_2	Is the bandwagon effect in decision making driven only by social pressure, or are there other causes, such as beliefs that others have better information?
+88_turn_3	Do social proof and information cascades reinforce each other, making it harder to resist following the crowd in decision making?
+88_turn_4	does seeing vote counts or poll numbers make people more likely to go with the majority in decision making?
+91_turn_1	In compulsive nose-picking, why isn't it officially listed as its own disorder in manuals like the DSM-5?
+91_turn_2	Why does the DSM-5 group compulsive nose-picking with excoriation disorder (dermatillomania) because of similar brain mechanisms?
+91_turn_3	Do people with compulsive nose-picking usually also have other body-focused repetitive behaviors, such as skin picking or hair pulling?
+91_turn_4	Do Sapap3 gene differences biologically distinguish compulsive nose-picking from regular OCD?
+91_turn_5	Do the DSM-5 diagnostic criteria distinguish compulsive nose-picking from skin-picking (excoriation disorder)?
+91_turn_6	Does the overlap between compulsive nose-picking and skin-picking (excoriation disorder) make it harder to treat them as separate conditions?
+96_turn_1	In worrying about the future, how does stressing for longer or more intensely affect how people feel?
+96_turn_2	long-term effects of chronic self-imposed pressure and worry about the future on physical and mental health
+96_turn_3	how does chronic stress and pressure about the future lead to overworking without realizing it
+96_turn_4	Does constantly worrying about the future make people feel like they're not making progress?
