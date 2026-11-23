@@ -1,0 +1,75 @@
+0_turn_1	In ROS2 logging, have you ever tried setting the log level to debug directly in your launch file?
+0_turn_2	ROS2 launch file set log level to debug at line 134 - does changing the log level to 'debug' in the launch file make a difference?
+0_turn_3	ROS2 launch file Node parameters or remappings blocking debug log level output
+2_turn_1	In gazebo_ros2_control setup, does installing it with apt usually require extra steps for Gazebo to find plugins and controllers?
+2_turn_2	gazebo_ros2_control apt install default demo plugin loads without tweaks
+2_turn_3	gazebo_ros2_control error: is it Gazebo not finding the plugin, or a plugin startup/initialization problem?
+15_turn_1	In Gazebo simulation, how does spawning entities with gazebo_ros differ from using ros_gz_sim in Ignition?
+15_turn_2	ros_gz_sim commands for spawning robots/entities into Ignition Gazebo (create node, -name, -file, -topic arguments)
+15_turn_3	ros_gz_sim source code location and supported launch file formats
+15_turn_4	Gazebo Classic to Ignition (ros_gz_sim) migration: is updating launch files tricky, or does the Migration Guide make it straightforward?
+16_turn_1	In ROS 2 navigation, is there a good overview comparing the main planners and controllers and their strengths?
+16_turn_2	ROS 2 Nav2 official guide or documentation comparing global planners (NavFn, 2D-A*, Theta*, Hybrid-A*, State Lattice) and local controllers (DWB, TEB, MPPI, Regulated Pure Pursuit) and their strengths
+16_turn_3	recent papers Robotics and Autonomous Systems comparing Nav2 planners and controllers (global planners NavFn, 2D-A*, Theta*, Hybrid-A*, State Lattice; local planners DWB, TEB, MPPI, Regulated Pure Pursuit)
+16_turn_4	ROS 2 Nav2 side-by-side comparison of global planners (NavFn, Lazy Theta*, 2D-A*, Hybrid-A*, State Lattice) and local controllers (DWB, TEB, MPPI, Regulated Pure Pursuit)
+20_turn_1	In ROS 2 control, is there a way to pass custom data types between the hardware interface and the controller?
+20_turn_2	ROS 2 control PR 1240 std::variant custom data types hardware interface controller release timeline
+20_turn_3	ROS 2 control std::variant custom data types passing a whole custom class for joint states between hardware interface and controller (PR 1240)
+32_turn_1	In RVIZ visualization, is there an easy way to show oriented bounding boxes, or is it mostly for MoveIt tasks?
+32_turn_2	How do you choose the right topic name so an oriented bounding box displays where you want in RVIZ?
+32_turn_3	How do you configure rviz_visual_tools to publish a bounding box marker to a specific RViz topic?
+38_turn_1	In setting up the NavSat plugin in Gazebo Ignition, does it matter if it's in the URDF or the world SDF?
+38_turn_2	Gazebo Ignition NavSat plugin: effect of placing the <gazebo> tag inside a link instead of the world SDF, and whether it prevents the sensor from appearing
+38_turn_3	Does adding the reference attribute to a URDF <gazebo> tag attach a sensor or plugin to the chassis link in Gazebo Ignition?
+46_turn_1	In ros2_control, what happens if a custom transmission interface can’t access joint limits from the URDF?
+46_turn_2	ros2_control rolling release change allowing hardware components to access the original URDF
+46_turn_3	ros2_control hardware component parse joint limits from original URDF XML, recommended way or library
+47_turn_1	In joint trajectory control, how can a prismatic drive accept continuous position updates without causing motion issues?
+47_turn_2	Can sending both position and velocity commands to a prismatic joint in joint trajectory control cause conflicting or less smooth motion?
+47_turn_3	Does a joint trajectory controller with a prismatic drive position interface require velocity in the state interface, or is reporting position alone sufficient?
+47_turn_4	What happens when a controller sends a position command past a prismatic joint's software limits in joint trajectory control: is the command ignored or is an error raised?
+50_turn_1	In URDF models for Gazebo, how does using the <gazebo> tag affect friction settings on links?
+50_turn_2	how to set mu and mu2 friction coefficients in the <gazebo> tag of a URDF link so Gazebo applies them
+50_turn_3	Gazebo URDF <gazebo> tag: can a wrong <minDepth> value cause friction (mu1/mu2) to not work at all?
+50_turn_4	Does placing the <gazebo> tag outside the <link> element in a URDF model affect how friction (mu1, mu2) is passed to Gazebo?
+50_turn_5	Is it necessary to define both <collision> and <visual> elements in a URDF link for friction to work correctly in Gazebo?
+55_turn_1	In setting up ros2_control_demos, did you already run rosdep to install all the needed dependencies?
+55_turn_2	Could skipping rosdep before building ros2_control_demos cause an executable not found error?
+55_turn_3	ros2_control_demos installation using Debian packages instead of building from source
+55_turn_4	ros2_control_demos build executable not found: could a dependency be missed by rosdep or apt during installation?
+58_turn_1	In RealSense D435 recordings, what happens to RGB and depth frame alignment if I skip 'theora' and 'compressed' topics?
+58_turn_2	Recording only raw RGB and aligned depth topics (e.g., /camera/color/image_raw and /camera/aligned_depth_to_color/image_raw) in RealSense D435 bag files: does it make it harder to diagnose mismatched frame counts?
+58_turn_3	Does using a regex filter with rosbag record stop cv_bridge errors and keep RGB and aligned depth frame counts matched in RealSense D435 recordings?
+58_turn_4	Would monitoring the 'theora' and 'compressed' topics during rosbag recording help ensure no frames are missed from the RGB or aligned depth streams on a RealSense D435?
+59_turn_1	In ROS 2 nodes, how does turning on 'use_sim_time' change what you get from node->now() compared to system and steady time?
+59_turn_2	ROS 2 steady time vs system time: why steady time is not affected when the system clock changes
+59_turn_3	ROS 2 timers steady time vs system time vs ROS time: why timers rely on steady time instead of system or ROS time
+59_turn_4	ROS 2 node clock type selection effect on node->now() return value (RCL_ROS_TIME, RCL_SYSTEM_TIME, RCL_STEADY_TIME)
+59_turn_5	ROS 2 problems caused by system time jumping suddenly while nodes are running, and how steady time avoids them
+59_turn_6	ROS 2 use_sim_time node clock synchronized with simulation time via /clock topic instead of real system time
+62_turn_1	In publishing odometry transforms, are you setting up the TransformStamped message with the latest data before broadcasting?
+62_turn_2	Why might the odom to base_link transform broadcast not be called where it should be in publishing odometry transforms with TransformStamped before broadcasting?
+62_turn_3	tf2 broadcaster tutorial odom to base_link TransformStamped sendTransform turtle pose
+70_turn_1	In Gazebo Fortress, does the pose publisher plugin need to go on a model, or can it work on a link?
+70_turn_2	Gazebo Fortress pose publisher plugin sample world file example SDF setup
+70_turn_3	Gazebo Fortress pose publisher plugin all configuration options official documentation
+70_turn_4	Gazebo Fortress pose publisher plugin on a model: does it publish poses for all links, sensors, and nested contents, and will RViz2 pick them up?
+72_turn_1	In ROS2 Crazyswarm setups, how should the crazyflies.yaml file list 'cf231' so I can set its parameters?
+72_turn_2	ROS2 Crazyswarm crazyflies.yaml cf231 parameter type boolean instead of integer
+72_turn_3	Can a parameter in the ROS2 Crazyswarm crazyflies.yaml configuration be changed after the node has started up, or are such parameters fixed at startup?
+72_turn_4	ROS2 Crazyswarm crazyflies.yaml parameter not applied for cf231: could the parameter name be mistyped or have wrong case?
+81_turn_1	In ROS2 navigation, is the map server actually sending data to the /map topic when you start nav2_bringup?
+81_turn_2	ROS2 nav2 map server /map topic published once, transient local durability, late subscribers missing map message
+81_turn_3	ROS2 map server republish service call to re-send map to RViz on /map topic
+82_turn_1	In ROS, is it possible to use multiple dynamic reconfigure servers for different sensor namespaces in one node?
+82_turn_2	Does DWAPlannerROS use multiple dynamic reconfigure servers, each with its own NodeHandle, to manage its dynamic parameters for different planners or costmaps?
+82_turn_3	Does setting up a separate NodeHandle per namespace for dynamic reconfigure servers in a ROS node (like DWAPlannerROS does with its planner name) let you add or remove sensors just by changing the config file?
+82_turn_4	How difficult is it to keep multiple dynamic reconfigure servers in sync when sensors are added or removed at runtime in a ROS node that uses a separate NodeHandle per sensor namespace?
+93_turn_1	In ROS2 dependency management, how does using '--as-root pip:false' with rosdep help avoid pip install issues?
+93_turn_2	rosdep '--as-root pip:false' issue ROS2 where to find tips or official documentation
+93_turn_3	rosdep '--as-root pip:false' option: does it keep Python package installs in the user's Python environment instead of modifying system files?
+93_turn_4	rosdep root install issue '--as-root pip:false' ROS2 threads or fixes on GitHub
+100_turn_1	In ROS Python nodes, how can I find the absolute path to a config file inside my package?
+100_turn_2	ROS package name consistency check: verifying package name matches across package.xml, CMakeLists.txt, and Python node references
+100_turn_3	Does using rospkg's RosPack get_path to build the absolute path to a config file in a ROS Python node script make the node work regardless of the directory it is launched from?
+100_turn_4	Does printing the path from rospkg's RosPack get_path call inside a ROS Python node show the exact location where the node looks for the config file at launch?

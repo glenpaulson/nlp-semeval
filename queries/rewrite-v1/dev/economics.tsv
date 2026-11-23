@@ -1,0 +1,92 @@
+0_turn_1	In global business, how do big companies use tax havens to avoid taxes in poorer countries, and what does that mean for public services there?
+0_turn_2	Do tax avoidance strategies by big companies, such as moving profits to tax havens, cause schools and hospitals to be underfunded in poorer countries?
+0_turn_3	Does extra tax revenue from corporate tax avoidance-related recovery in poorer countries still help regular people if government officials misuse the money?
+1_turn_1	In lottery choices, how does stochastic dominance affect which option someone with Von Neumann-Morgenstern preferences would pick?
+1_turn_2	Can we predict which lottery someone with Von Neumann-Morgenstern preferences would pick when their exact utility function is unknown, and does stochastic dominance still determine the choice?
+1_turn_3	Do gambles A and C in the dice example have first-order stochastic dominance over each other, or are they equal in giving better odds at every payoff?
+1_turn_4	Given lotteries A and C that cannot be ranked by first-order stochastic dominance, how much can you determine about a Von Neumann-Morgenstern decision maker's choice by comparing their expected values?
+3_turn_1	In government debt crises, has Argentina ever failed to pay back its inflation-linked bonds?
+3_turn_2	examples of countries unable to repay their own government treasury bonds during a crisis such as hyperinflation
+3_turn_3	Does sovereign default on treasury bonds during hyperinflation or debt crises make it harder for countries like Argentina, Russia, and Germany to borrow money later?
+3_turn_4	Is it common for governments to reduce their debt through inflation rather than openly refusing to pay sovereign debt during crises like hyperinflation?
+10_turn_1	In US population growth, how could the age and timing of future female immigrants change natural increase and aging by 2060?
+10_turn_2	What would happen to the US population's age structure by 2060 if far fewer young immigrants arrived after 2023?
+10_turn_3	Does immigration to the US after 2023 lower population aging by 2060 because immigrant women increase the number of births, even though each woman has fewer children overall?
+10_turn_4	Does a growing number of second-generation women reaching childbearing age keep total births up even if each woman has fewer children?
+10_turn_5	US population aging trend and natural increase: will natural increase turn negative after 2060 as the population ages?
+16_turn_1	In production models, why does balancing two factors like X and Y boost output more than focusing on just one?
+16_turn_2	Why do strategic complements in production models make boosting one input raise the marginal value of the other, so that balancing two factors X and Y increases output more than focusing on just one?
+16_turn_3	Is balancing two inputs that act as strategic complements, where increasing one raises the incentive to increase the other, what supermodular functions describe?
+17_turn_1	In two-person continuous games, how does that second-derivative condition help prove diagonal strict concavity?
+17_turn_2	Do the mixed partial derivatives make diagonal strict concavity work in two-person continuous games, in the second-derivative condition used to prove it?
+17_turn_3	Why does a negative definite quadratic form guarantee diagonal strict concavity in two-person continuous games?
+17_turn_4	Is a negative definite quadratic form (negative quadratic form in the symmetric part of the Jacobian) necessary for diagonal strict concavity in two-person continuous games, or is it only one sufficient way to guarantee uniqueness of the equilibrium?
+17_turn_5	Real-world applications of checking diagonal strict concavity and negative definiteness of the symmetric part of the Jacobian matrix in two-person continuous games, and how this condition affects system behavior and uniqueness of equilibrium
+22_turn_1	In US Treasury auctions, how does using a single price for all winning bids make the process more competitive?
+22_turn_2	Studies on US Treasury auctions: do single-price auctions cost the Treasury more or less than multiple-price auctions?
+22_turn_3	Why did US Treasury auctions start with multiple-price auctions in 1929, and why did they continue using multiple-price auctions for some securities later on?
+22_turn_4	US Treasury multiple-price auctions: specific problems with the multiple-price auction format that led officials to consider switching to single-price auctions around 1991
+22_turn_5	Main reasons researchers believed single-price auctions could lower US Treasury financing costs compared with multiple-price auctions
+28_turn_1	In production possibility frontiers, what does it mean if a point lies right on the curve?
+28_turn_2	Does unemployment mean an economy is not producing on its production possibility frontier?
+28_turn_3	Production possibility frontier (PPF) curve: how to show a curved PPF with an equation, or is it always a straight line?
+28_turn_4	If unemployment falls, does the economy just move closer to the production possibility frontier curve, or can it push the PPF curve outward?
+28_turn_5	What happens to the production possibility frontier (PPF) if more people start retiring, with nothing else changing?
+28_turn_6	What happens to the production possibility frontier (PPF) if the number of working-age people increases but nothing else changes?
+32_turn_1	In a global currency system, how could countries handle local economic problems without their own monetary policies?
+32_turn_2	Would sticky wages and prices be a major problem for countries in a shared currency system when only some countries are hit by an economic shock and cannot use their own monetary policy?
+32_turn_3	Can labor mobility between countries in a shared currency system fully correct economic imbalances caused by asymmetric shocks, or are its benefits limited?
+32_turn_4	Would eliminating currency exchange between countries in a shared currency system make trade between them significantly smoother, or is it more complicated than that?
+38_turn_1	In stock trading, how do exchanges decide which orders get matched first when prices are the same?
+38_turn_2	How do stock exchanges determine the execution price when multiple orders can be matched at once?
+38_turn_3	In stock trading, when a buy order's bid price is higher than the lowest sell order's ask price, is the trade executed at the seller's ask price or the buyer's bid price?
+38_turn_4	How do stock exchanges decide which orders get matched first when two orders arrive at the exact same moment?
+38_turn_5	Would having more overlapping bids and asks make it easier for someone placing a market order to get a better price?
+39_turn_1	In banking regulation, does the fact that both reserves and Treasuries are top-tier liquid assets mean Fed bond purchases don’t really change banks’ liquidity?
+39_turn_2	Does the Fed buying Treasuries from banks, when banks already hold plenty of reserves, actually boost bank lending or spending?
+39_turn_3	Can banks create more deposits through lending even if the Fed does not add reserves to the banking system?
+39_turn_4	Is it more about how open market operations (OMOs) move interest rates now, rather than just changing the money supply numbers?
+47_turn_1	In banking, how do low interest rates affect how much banks want to lend?
+47_turn_2	What happens to bank lending when banks earn less from loans, in the context of low interest rates and lending concentrated toward the most productive, higher-profit firms?
+47_turn_3	Do households save less when interest rates stay low for a long time?
+54_turn_1	In the GPU market, why would NVIDIA want to keep gamers and crypto miners from easily switching between uses?
+54_turn_2	Is price discrimination between customer segments, like NVIDIA charging gamers and crypto miners different GPU prices, similar to region-locking consoles to stop people from buying cheaper ones in other regions?
+54_turn_3	Would separating NVIDIA GPU gamers and crypto miners into different markets let NVIDIA charge them different prices?
+54_turn_4	NVIDIA GPU pricing: why not simply raise prices for GPUs when crypto miners are willing to pay more?
+57_turn_1	In inflation adjustments, why does the linear method give a different value after a year than daily compounding?
+57_turn_2	Effect of entering a higher annual inflation rate by mistake on daily compounded inflation adjustments over a couple of years
+57_turn_3	Difference between daily compounding and continuous compounding for low inflation rate
+57_turn_4	Does daily compounding approach continuous compounding as the compounding intervals become very small?
+57_turn_5	Do linear inflation adjustment and daily compounding inflation adjustment always give the correct final value, or can one drift off over time?
+57_turn_6	Which inflation adjustment method (linear, daily compounding, or continuous compounding) is better for tracking real-world inflation day by day?
+60_turn_1	In economics, how does the Fisher equation link interest rates to expected inflation?
+60_turn_2	Why would higher nominal interest rates push inflation up instead of down, in the context of the Fisher equation linking nominal interest rates to expected inflation?
+60_turn_3	Under what conditions does cutting nominal interest rates fail to raise inflation, as predicted by Neo-Fisherism and the Fisher equation?
+64_turn_1	In preference mapping, how does allowing for ties between goods change the number of bits needed?
+64_turn_2	Would requiring preferences to be complete and transitive change the number of bits needed to represent preference patterns over goods, compared with allowing ties?
+64_turn_3	ordered Bell numbers weak orders complete transitive preferences ties between goods bits needed preference mapping
+64_turn_4	is the base-2 logarithm of the ordered Bell number (weak orders count) for three goods the exact number of bits needed to store all possible weak-order preference rankings?
+73_turn_1	In investment decisions, how does using a Taylor expansion help compare options with different risk and return?
+73_turn_2	How does a high degree of risk aversion change which investment looks better when comparing options with different expected return and variance using a Taylor expansion quadratic approximation of utility?
+73_turn_3	Simple way Taylor expansion links expected return and risk (variance) when comparing two investment choices
+73_turn_4	How does expected utility make comparing investment options with different mean return and variance more solid when using a Taylor expansion quadratic approximation?
+75_turn_1	In partitioning food spending by industry, what problems could happen if different input-output tables are mixed together?
+75_turn_2	Using detailed PCE (personal consumption expenditures) data to split the $8,169 food spending amount more accurately by industry
+75_turn_3	How do you determine which BEA industry vegetable farming dollars should be assigned to when partitioning food spending by industry using PCE food categories and input-output tables?
+75_turn_4	Using input-output tables and PCE food spending data, how can I determine how much food spending ultimately supports farm equipment manufacturing industries (indirect and direct contributions by BEA industry)?
+75_turn_5	Using BEA supply and use tables, how can I verify that food spending dollars allocated to detailed industries (such as vegetable farming, using the 402-industry tables) actually end up in the correct industry?
+75_turn_6	Can household food spending (PCE food) be traced through the BEA Use table to show which industries and commodities it ultimately lands in?
+77_turn_1	In filling gaps in time series, how does a Catmull–Rom spline make sure it keeps all the real data points?
+77_turn_2	Catmull–Rom spline interpolation artifacts or unnatural-looking curves when filling consecutive gaps in time series data
+77_turn_3	Would using other related time series to fill gaps give better estimates than relying on a Catmull–Rom spline for those gaps?
+93_turn_1	In organizational signaling, how do companies use signals to help stakeholders deal with limited information?
+93_turn_2	Who originated Signaling Theory, and how did its origins shape its use in organizational signaling today?
+93_turn_3	Impression management versus signaling: does impression management only involve signaling, or does it also cover other ways organizations shape stakeholders' perceptions?
+93_turn_4	Is impression management less reliable than signaling theory for companies because it lacks a strict model?
+93_turn_5	Why did impression management focus more on social cues rather than strict information gaps, unlike signaling theory in organizational contexts?
+95_turn_1	In bootstrap methods, what else is needed besides asymptotic normality to make sure the bootstrap works?
+95_turn_2	How much can we trust general bootstrap consistency theorems when we only know that a statistic is asymptotically normal?
+95_turn_3	Horowitz bootstrap theorem: conditions under which asymptotic normality is not sufficient for the bootstrap to work
+99_turn_1	In regression models, how does the Frisch-Waugh-Lovell theorem help us interpret x’s effect if x is made of z1 and z2, and we include z1 as a control?
+99_turn_2	Frisch-Waugh-Lovell theorem: what remains of x after partialling out z1 (the residual from regressing x on z1)
+99_turn_3	Why does the coefficient on z1 change depending on whether the model includes x or includes z1 and z2 separately, in regression with x made of z1 and z2?

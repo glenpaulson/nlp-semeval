@@ -1,0 +1,38 @@
+ex_2927_turn_1	In surveying drones, does having the near-infrared sensor on the Mavic 3M change how it works compared to the Mavic 3E?
+ex_2927_turn_2	Does the multispectral sensor on the Mavic 3M change mapping accuracy compared to the Mavic 3E for surveying?
+ex_2927_turn_3	Mavic 3M vs Mavic 3E ease of use with RTK module and extra batteries
+ex_2779_turn_1	In LiPo batteries, how does the number of cells in series change the total voltage when they're fully charged?
+ex_2779_turn_2	LiPo battery fully charged voltage for 4-cell and 6-cell packs in series (4S and 6S)
+ex_2779_turn_3	Is there ever a situation where charging a LiPo cell above 4.2 volts is desirable, or is it always risky?
+ex_2752_turn_1	In ESC control modes, how does using default throttle control versus active speed control affect how accurately I can track motor RPM?
+ex_2752_turn_2	Does ESC governor mode (active speed control) keep motor RPM steady when the throttle is suddenly increased?
+ex_2752_turn_3	ESC governor mode: is it normal for motor RPM to lag behind throttle input when throttle is changed quickly?
+ex_2693_turn_1	In FPV drone setup, have you tried calibrating both the gyroscope and sticks, maybe using Betaflight or something similar?
+ex_2693_turn_2	Betaflight accelerometer calibration: does it stop gyro drifting in FPV drones?
+ex_2693_turn_3	Did you make sure the drone was totally still and flat during the accelerometer/gyro calibration in Betaflight?
+ex_2693_turn_4	Betaflight horizon line level when drone sitting still on flat surface after gyro calibration
+ex_2662_turn_1	In drone flight software, how does INav help make landings smoother and easier than Betaflight, especially when controlling descent speed?
+ex_2662_turn_2	Does INav's ALTHOLD throttle control for adjustable descent speed make landing with Betaflight trickier for beginners than with a DJI drone?
+ex_2662_turn_3	Disarming a drone right before touching down in Betaflight or INav: is it safer, or could it cause problems?
+ex_2662_turn_4	Why don't Betaflight drones have automatic landing help like altitude hold built in?
+ex_2545_turn_1	In battery setups, is it risky to connect LiPo and Li-ion batteries in series if their specs are slightly different?
+ex_2545_turn_2	Mixing older LiPo and new Li-ion batteries in series: how does it affect pack operation and safety?
+ex_2545_turn_3	Can a LiPo or Li-ion battery pack fire happen suddenly, or are there warning signs beforehand, such as overheating, swelling, or leaking when batteries are mismatched in series?
+ex_2424_turn_1	In drone flight range, do fixed wing drones usually go farther than multirotor drones if they use the same radio and battery setup?
+ex_2424_turn_2	What would it take for a multirotor drone to maintain a solid radio connection at 4 km range, given the same radio and battery setup as fixed-wing drones?
+ex_2424_turn_3	store-bought multirotor drones with 4km video transmission range, real-world vs. advertised range
+ex_2424_turn_4	effect of humidity and open water on drone radio signal at 4 km range
+ex_2324_turn_1	In choosing a drone for video, is the subject tracking and obstacle avoidance on the DJI Mini 4 Pro really better than cheaper models?
+ex_2324_turn_2	Is it worth paying more for the DJI Mini 4 Pro and other pro drones with subject tracking and obstacle avoidance when you're just starting out in video?
+ex_2324_turn_3	why do beginners choose the DJI Mini 4 Pro (Mini Series) over cheaper drones for video, considering its subject tracking, obstacle avoidance, and camera features
+ex_2324_turn_4	DJI Mini 4 Pro vs cheaper drones wind resistance and sand performance
+ex_2324_turn_5	DJI Mini series (Mini 4 Pro, Mini 2 SE, Mini 3) vs other brands at similar price: video smoothness and sharpness comparison
+ex_2271_turn_1	In drone building, can the same ESC handle both high Kv and low Kv brushless motors without any issues?
+ex_2271_turn_2	Does a lower PWM frequency make large, low Kv brushless motors start up smoother on an ESC?
+ex_2271_turn_3	How can I tell if the PWM frequency on an ESC is too high or too low for big, low Kv brushless motors?
+ex_2248_turn_1	In drone flying, what are some invisible hazards like power lines or interference that pilots should watch out for?
+ex_2248_turn_2	drone flying losing visual line of sight behind an obstacle, effects and risks
+ex_2248_turn_3	How can drone pilots tell if power line electromagnetic interference is affecting their drone before it becomes a problem?
+ex_2240_turn_1	In using the DJI Mini 2 controller with simulators, does it show up as a standard USB gamepad when plugged into Android or a computer?
+ex_2240_turn_2	Android apps for flying a DJI-style drone with a camera view using a DJI-style controller
+ex_2240_turn_3	Do SRIZFLY or SimuDrone Android drone simulator apps support GPS modes like Return-to-Home with a non-DJI controller?
