@@ -16,7 +16,8 @@ load_dotenv(REPO_ROOT / ".env")  # JAVA_HOME / JVM_PATH from .env (shell values 
 import pytrec_eval  # noqa: E402
 from tqdm import tqdm  # noqa: E402
 
-from src.data import DOMAINS, SPLITS, iter_corpus, load_qrels, load_turns, normalize_history  # noqa: E402
+from src.data import DOMAINS, SPLITS, iter_corpus, load_qrels, load_turns  # noqa: E402
+from src.queries import history_query, read_tsv  # noqa: E402
 
 TOP_K = 100
 BASELINE_NAMES = {"turn": "baseline-turn", "turn+history": "baseline-turn-history"}
@@ -85,29 +86,20 @@ def resolve_source(args: argparse.Namespace) -> tuple[str, str]:
 
 def baseline_queries(split: str, domain: str, kind: str) -> dict[str, str]:
     """Return {topic_id: query}: the current turn, or turn plus history joined as the starter kit does."""
-    queries = {}
-    for turn in load_turns(split, domain):
-        history = normalize_history(turn.conversation_history)
-        if kind == "turn+history" and history:
-            queries[turn.topic_id] = "\n\n".join([turn.query, f"Conversation History:\n{history}"])
-        else:
-            queries[turn.topic_id] = turn.query
-    return queries
+    turns = load_turns(split, domain)
+    if kind == "turn+history":
+        return {t.topic_id: history_query(t, [t.query]) for t in turns}
+    return {t.topic_id: t.query for t in turns}
 
 
 def read_queries(path: Path) -> dict[str, str]:
-    """Return {topic_id: query} from a topic_id<TAB>query file."""
+    """Return {topic_id: query} from a topic_id<TAB>query file, exiting with a message if it is missing or malformed."""
     if not path.is_file():
         sys.exit(f"missing query file: {path}")
-    queries = {}
-    for n, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
-        topic_id, sep, query = line.partition("\t")
-        if not sep or not query.strip():
-            sys.exit(f"{path}:{n}: expected topic_id<TAB>query")
-        if topic_id in queries:
-            sys.exit(f"{path}:{n}: duplicate topic_id {topic_id}")
-        queries[topic_id] = query
-    return queries
+    try:
+        return read_tsv(path)
+    except ValueError as error:
+        sys.exit(str(error))
 
 
 def oracle_ranking(qrels: dict[str, dict[str, int]]) -> dict[str, list[tuple[str, float]]]:

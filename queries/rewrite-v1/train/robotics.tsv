@@ -1,0 +1,184 @@
+5_turn_1	In Nav2 costmap plugins, how can I subscribe to a topic to get coordinate points for obstacles?
+5_turn_2	Nav2 StaticLayer map topic subscription compared with node->create_subscription<nav_msgs::msg::OccupancyGrid> in a costmap plugin
+5_turn_3	Nav2 costmap plugin subscription to occupancy grid topic: how to make sure the subscription only runs while the plugin is active
+5_turn_4	Nav2 costmap plugin subscribing to multiple topics: managing multiple create_subscription<nav_msgs::msg::OccupancyGrid> subscriptions in a costmap layer plugin
+6_turn_1	In MoveIt2 configurations, could a recent pull request have changed how 'capabilities' work in launch files?
+6_turn_2	MoveIt2 move_group launch file 'capabilities' argument missing or misconfigured, set via moveit_config.move_group_capabilities
+6_turn_3	MoveIt2 move_group launch file: what happens when the 'capabilities' launch argument has no default value and is not set (moveit_config.move_group_capabilities)?
+7_turn_1	In Gazebo plugin development, how can the Configure method set up a custom rotor velocity publisher topic?
+7_turn_2	Gazebo plugin development: how to create a publisher inside a plugin's Configure method to send rotor velocities for a multicopter, using the robot namespace and command sub-topic
+7_turn_3	Gazebo plugin for multicopter: keeping rotor velocities up to date while publishing Actuators velocity messages (resizing to number of rotors, Configure method, robotNamespace/commandSubTopic twist command subscription)
+7_turn_4	Gazebo plugin development: what CMakeLists.txt changes are needed to get the Gazebo plugin dependencies (Actuators component, twist command subscription, PreUpdate rotor velocity publishing) working together?
+7_turn_5	Gazebo plugin: straightforward way to read the custom rotor velocity command topic name from the SDF in the Configure method
+8_turn_1	In ROS2, how do you set up a MultiThreadedExecutor in your node's main function?
+8_turn_2	How do you set up and attach an image node to a MultiThreadedExecutor in ROS2, in the node's main function?
+8_turn_3	ROS2 MultiThreadedExecutor run image callbacks at the same time with callback groups
+8_turn_4	How do you create and assign a custom callback group to an image subscription in ROS2 when using a MultiThreadedExecutor?
+8_turn_5	ROS2 MultiThreadedExecutor how are callbacks selected to run concurrently, callback groups reentrant mutually exclusive
+9_turn_1	Regarding Arduino Mega and ROS 2, how can I send data between them if ros2arduino isn't supported?
+9_turn_2	GitHub projects showing ROS 2 serial communication between Arduino Mega and ROS 2 (ros2_serial_interface, serial_server, virtual_serial_client.py)
+9_turn_3	Arduino Mega ROS 2 serial communication setup using ros2_serial_interface (serial_server.py and virtual_serial_client.py)
+9_turn_4	limitations of serial communication between Arduino Mega and ROS 2 using ros2_serial_interface (serial_server.py and virtual_serial_client.py)
+11_turn_1	In ROS2 C++ nodes, how can you set up a subscriber callback that takes extra arguments?
+11_turn_2	ROS2 C++ node and subscription lifetime: what to watch out for so the node and its subscriptions don't get destroyed too early, in the context of subscriber callbacks using lambdas that capture [this]
+11_turn_3	ROS2 C++ lambda subscriber callback with extra captured arguments: does using a lambda change how to call RCLCPP_INFO inside the callback?
+11_turn_4	ROS2 C++ node with two subscriptions using lambda callbacks that capture different extra arguments: should each subscription be stored in its own separate member variable?
+11_turn_5	ROS2 C++ create_subscription with std::bind: where to specify queue size argument
+12_turn_1	In ros2_control hardware interfaces, does changing the controller manager's update rate affect how often write() gets called?
+12_turn_2	ros2_control hardware interface: what happens if the hardware update rate doesn't match the controller manager's update rate, and can it affect write() timing?
+12_turn_3	ros2_control hardware interface: would a command buffer make it easier to align motion commands with each write() call when the controller manager update rate differs from the hardware update rate?
+13_turn_1	In ROS2, does using --symlink-install let you update Python launch files without rebuilding the package?
+13_turn_2	ROS2 colcon build without --symlink-install: do Python launch files require rebuilding the package after changes?
+13_turn_3	ROS2 ros2 launch picks up latest saved Python launch file automatically with --symlink-install without rebuilding
+14_turn_1	In trajectory analysis, can I use PlotJuggler to directly compare odometry paths from ROS2 bag files?
+14_turn_2	How hard is it to set up PlotJuggler for ROS2 bag files, or is it usually straightforward?
+14_turn_3	PlotJuggler plot multiple odometry topics from ROS2 bag files together in one X-Y graph
+14_turn_4	PlotJuggler show distance error between odometry paths on X-Y plot
+19_turn_1	In ROS2 control xacro files, can I use component_parser.hpp in a regular node to read custom GPIO configs?
+19_turn_2	Would using component_parser.hpp to parse a URDF string for ROS2 control resources and GPIO configs work without controller_manager, or does it rely on something specific from ros2_control?
+19_turn_3	Can I include ROS2 control's component_parser.hpp in any node, and is there any licensing or setup catch?
+22_turn_1	In powering robotics projects, how can I use a DC/DC converter to get 12V and 6V from an 18V source, and why is that better than using resistors?
+22_turn_2	SparkFun DC/DC converter to run motors and Arduino safely from 18V batteries
+22_turn_3	SparkFun DC/DC Converter Breakout stability under high motor current draw
+22_turn_4	SparkFun DC/DC Converter Breakout how to set output voltage with a trim resistor between Trim and GND pins
+24_turn_1	In robot navigation, how can I set things up so the robot stops if it detects something too close in front?
+24_turn_2	official examples for setting up the collision monitor to stop a robot when obstacles are too close in front, using a 'PolygonStop' polygon with action type 'stop
+24_turn_3	Nav2 collision monitor settings that control stop distance: PolygonStop points, action_type stop, min_points, and sensor/observation source parameters
+28_turn_1	In ros_gz_bridge setups, could using Gazebo Garden instead of Fortress stop messages from reaching ROS 2 topics?
+28_turn_2	ros_gz_bridge messages not reaching ROS 2 topics when the bridge and the simulation use different Gazebo versions (Garden vs. Fortress)
+28_turn_3	rebuild ros_gz_bridge from source with the right Humble branch to get messages publishing to ROS 2 topics, Gazebo Garden vs Fortress GZ_VERSION
+29_turn_1	In ROS subscription callbacks, why is it not recommended to pass a shared_ptr if you’re not changing it?
+29_turn_2	ROS subscription callbacks sharing the same shared_ptr message: what happens when two different callbacks modify the same shared_ptr message?
+29_turn_3	ROS subscription callbacks sharing the same shared_ptr message: can two subscriptions modifying the same message cause race conditions or other bugs?
+30_turn_1	In MoveIt, where exactly can I find the code for the move_group_interface.plan method?
+30_turn_2	MoveIt move_group_interface plan method: special processing when setting up goal constraints (poses and tolerances for end effectors) before planning
+30_turn_3	which file contains the code for constructMotionPlanRequest in MoveIt move_group_interface (plan method)
+33_turn_1	In Turtlebot4 navigation, how can I send a goal to /navigate_to_pose from C++ and track its status?
+33_turn_2	C++ result type in the callback for the /navigate_to_pose action in Turtlebot4 navigation (action client for goal status tracking)
+33_turn_3	What does the 'code' field in the rclcpp_action ClientGoalHandle result (WrappedResult) indicate about the outcome of a navigate_to_pose action goal in ROS 2?
+33_turn_4	Why does a ROS 2 action keep the status code separate from the result data in rclcpp_action, and what is the reason for that design?
+36_turn_1	In working with CAN messages in Python, where can I find clear guides for using the python-can library?
+36_turn_2	quick example sending a CAN message using python-can to see it working
+36_turn_3	python-can PCAN-USB interface auto-detection or manual configuration required
+36_turn_4	How do you configure the bitrate and channel when using python-can with a PCAN-USB device?
+39_turn_1	In using sensors with ROS2, is there any documentation that explains how your LiDAR communicates or shares data?
+39_turn_2	Would using a simple library to read LiDAR data make ROS2 integration easier?
+39_turn_3	open-source ROS2 LiDAR driver customization to support a SensorInterface implementation for a specific lidar sensor
+41_turn_1	In ROS package installation, how can I fully remove behaviortree-cpp to fix version conflicts?
+41_turn_2	After purging behaviortree-cpp from ROS, what should I do to clear out leftover issues before reinstalling behaviortree-cpp?
+41_turn_3	dpkg missing config files after purging behaviortree-cpp, and how to detect leftover config files that could affect future installs
+43_turn_1	In Gazebo simulations, how does separating gzserver and gzclient affect showing the GUI when using C++?
+43_turn_2	Gazebo /usr/bin/gazebo launcher: how it starts both gzserver and gzclient together to show the GUI
+43_turn_3	Can the communication between gzserver and gzclient be modified when working with the Gazebo source code?
+43_turn_4	Gazebo /usr/bin/gazebo launcher starts gzserver and gzclient together: what mechanism launches both the server and GUI processes
+43_turn_5	Gazebo gzserver and gzclient launch: how knowing how the gazebo launcher starts both server and GUI helps set up a C++ program
+44_turn_1	In Gazebo Garden, how can I set up the pose publisher to share my RGBD camera's pose with ROS?
+44_turn_2	Gazebo Garden pose publisher SDF tags for RGBD camera sensor pose ROS: which tags to configure (publish_sensor_pose, pose publisher plugin)
+44_turn_3	Gazebo Garden pose publisher setup for RGBD camera pose to ROS: is it enough to set publish_sensor_pose, publish_model_pose, or publish_collision_pose SDF tags, or is plugin code modification required?
+44_turn_4	Does setting `<publish_sensor_pose>` to true in the Gazebo Garden pose publisher for an RGBD camera make the camera's transform appear in ROS tools like RViz?
+45_turn_1	In Nav2 PlannerSelector, could different QoS settings be stopping planner selection messages from getting through at runtime?
+45_turn_2	Nav2 PlannerSelector behavior when no messages are received on the planner selection topic: does it default to the default planner every time?
+45_turn_3	Would adjusting QoS settings on both the publisher and subscriber sides allow switching planners at runtime in Nav2 PlannerSelector?
+48_turn_1	In sending ROS2 actions from roslib.js to rosbridge_suite, are the action client and goal classes set up right for FollowJointTrajectory?
+48_turn_2	ROS2 roslib.js ActionClient action type or action server name mismatch with FollowJointTrajectory rosbridge_suite
+48_turn_3	roslib.js ActionClient sending goal to rosbridge_suite ROS2 action: do result and feedback handlers get called?
+49_turn_1	In ROS2 launch files, how can I use '$(find-pkg-share ...)' to point to a YAML parameter file for a node?
+49_turn_2	ROS2 launch file YAML parameter file loaded via find-pkg-share still applies when node is launched inside a namespace
+49_turn_3	ROS2 turtlesim node loading YAML parameter file setting background to orange, what changes visually in turtlesim window
+49_turn_4	ROS2 launch file YAML parameter file layout compared to XML launch file parameter format
+49_turn_5	ROS2 launch file YAML 'from' key versus XML <param> tag: what can the 'from' key do that XML <param> cannot?
+49_turn_6	ROS2 launch migration guide: does it explain how to convert parameter syntax from XML launch files to Python or YAML?
+49_turn_7	ROS2 full YAML launch file example with node parameters
+49_turn_8	ROS2 YAML launch file: setting both a custom namespace and a different node name for a node with parameters loaded via the 'from' key
+53_turn_1	In drone control, how do you set the yaw angle so the drone faces a specific direction?
+53_turn_2	Tweak the drone position control method to also set the yaw angle using quaternion_from_euler
+53_turn_3	quaternion_from_euler yaw input expected units and range documentation
+53_turn_4	Does setting a drone's orientation with a quaternion from quaternion_from_euler (with a specified yaw angle) immediately make the drone rotate to the new heading?
+53_turn_5	If I keep increasing the yaw angle set with quaternion_from_euler, does the drone keep turning in the same direction?
+53_turn_6	Negative yaw angle in drone control: does it rotate the drone in the opposite direction?
+54_turn_1	In setting up iRobot Create3 with Multipass, have you tried using a bridged network for ROS 2 communication?
+54_turn_2	iRobot Create3 with Multipass VM bridged network: is the VM's IP on the same subnet as the Create3, or on separate subnets?
+54_turn_3	Multipass VM launched with --bridged flag vs default network settings for iRobot Create3 ROS 2 communication
+54_turn_4	Can you ping an iRobot Create3 from a Multipass VM using a bridged network to verify that they can communicate for ROS 2?
+57_turn_1	In working with open_mower_ros, have you tried updating the Git submodules to get all dependencies?
+57_turn_2	Do the git submodules (such as xesc_ros, ftc_local_planner, and slic3r_coverage_planner) show up as folders in the src directory of open_mower_ros after cloning?
+57_turn_3	open_mower_ros missing dependencies not listed in .gitmodules file, git submodules
+57_turn_4	Open_mower_ros: are the missing dependencies (such as xesc_ros, ftc_local_planner, slic3r_coverage_planner) meant to be built from source rather than installed via rosdep?
+63_turn_1	In ROS2 bag conversion, how should I set the 'uri' field in convert.yaml for the MCAP output directory?
+63_turn_2	Command to convert a ROS2 SQLite bag to MCAP format using convert.yaml, so the output can be filtered with mcap filter
+63_turn_3	How should the 'uri' field be written in the convert.yaml file to ensure the MCAP output is placed in the desired directory for ros2 bag convert?
+63_turn_4	ROS2 bag convert convert.yaml output storage format MCAP flag to select MCAP as output format
+65_turn_1	In robot arm control, how does using a position vector make it easier for beginners to move the joints?
+65_turn_2	How to find which topic to publish joint position vectors to for a robot arm position controller?
+65_turn_3	Basic configuration file example for a position controller with five joints using custom joint names, sending Float64MultiArray position commands to the ~/commands topic
+65_turn_4	Position controller '~/commands' topic Float64MultiArray: do I send five numbers in a specific order, or do joint names need to be included too?
+66_turn_1	In rclcpp nodes, what should you do if wait_for_action_server() returns false while waiting for an action server?
+66_turn_2	rclcpp action client C++ example setup ROS 2 docs
+66_turn_3	rclcpp simple way to wait for multiple action servers to be ready before node continues
+67_turn_1	Regarding the TEB controller in ROS 2, has the maintainer leaving academia affected its support for newer versions like Humble?
+67_turn_2	What problems could occur when using the TEB (Timed Elastic Band) controller with ROS 2 Humble, given that TEB is unmaintained?
+67_turn_3	MPPI vs TEB local planner in ROS 2: is MPPI filling the same role as TEB, or does it work differently?
+67_turn_4	MPPI controller setup and documentation ease in ROS 2 Humble
+67_turn_5	Why was the Elastic Band method (used in TEB) less appealing for newer navigation stacks compared to MPPI?
+67_turn_6	Does switching from TEB to MPPI change how people tune or customize local planners in ROS 2?
+68_turn_1	In stereo vision with CSI cameras, how do you calibrate them and use that data to generate camera_info topics?
+68_turn_2	opencv_cam ROS node load specific camera calibration file to publish camera_info topic with stereo CSI cameras
+68_turn_3	opencv_cam camera_info stereo_image_proc setup requirements for stereo calibration
+68_turn_4	How do you create a stereo camera calibration YAML file for opencv_cam with CSI cameras, using the camera_info_path parameter and stereo calibration for stereo_image_proc?
+69_turn_1	In ROS 2 Humble, does the joint trajectory controller still leave joints moving after a trajectory finishes, or was that fixed?
+69_turn_2	ROS 2 Humble joint trajectory controller fix for joints continuing to move after trajectory finishes: is it scheduled to be backported to Humble or still in review?
+69_turn_3	ROS 2 Humble joint trajectory controller joints keep moving after trajectory finishes velocity issue documented in official docs or support threads
+71_turn_1	In Webots ROS2 simulations, how can I set up sensor data to publish to ROS 2 topics using ros2_control?
+71_turn_2	Webots ROS2 custom device plugin: is there an extra step needed to publish sensor topics from a custom device plugin, in ROS2 simulations using ros2_control?
+71_turn_3	Webots ROS 2 ros2_control: sending commands and getting feedback from pendulum joints in real time through ROS 2 topics
+73_turn_1	In Gazebo Classic, how can I make sure an ArUco marker texture is visible from both sides of a model?
+73_turn_2	Gazebo Classic material script reading for ArUco marker texture visibility on a thin box model
+73_turn_3	Gazebo Classic: what happens when an ArUco marker texture image referenced in a model's material script is not in the expected folder—does Gazebo fail to find it at all?
+73_turn_4	Where can I download ready-made ArUco marker models for Gazebo 11?
+75_turn_1	In Intel RealSense with ROS 2, what's the apt command to install the official RealSense packages on Humble?
+75_turn_2	Does ros-humble-realsense2 work with newer kernels, or are there issues streaming data with Intel RealSense on ROS 2 Humble?
+75_turn_3	Do I need to add anything special to my apt sources list to install the official Intel RealSense packages (ros-humble-realsense2-*) and librealsense2 on ROS 2 Humble, or do they all come from the main Ubuntu repositories?
+77_turn_1	In point cloud processing with Gazebo, how can I save LiDAR PointCloud2 data as a .pcd file?
+77_turn_2	Which settings of the PCD saver node matter most for saving LiDAR PointCloud2 point clouds from Gazebo Fortress, such as prefix, fixed frame, binary format, and compression?
+77_turn_3	Why is the pointcloud_to_pcd node needed when working with point clouds in Gazebo Fortress?
+77_turn_4	Gazebo Fortress LiDAR sensor publish PointCloud2 messages ROS topic configuration
+78_turn_1	In MoveIt simulation, why can’t we set use_sim_time directly in the generated launch files?
+78_turn_2	MoveIt simulation: how to modify launches.py to pass use_sim_time from the launch file
+78_turn_3	MoveIt simulation use_sim_time not propagated from generated launch files workaround or open issue on GitHub
+78_turn_4	MoveIt simulation launches.py: where exactly to set use_sim_time to True for trajectory execution to work
+79_turn_1	In Gazebo Fortress, how can I set the frame for IMU messages using the xacro file?
+79_turn_2	Gazebo Fortress IMU frame ID: replacement for 'ignition_frame_id' tag, use 'gz_frame_id' tag in sensor definition
+79_turn_3	Gazebo Fortress IMU sensor xacro: what happens when both 'gz_frame_id' and 'ignition_frame_id' tags are included in the same sensor definition, and does it pick one automatically?
+79_turn_4	Where should the gz_frame_id tag be placed inside the sensor block in a Gazebo Fortress IMU sensor xacro file?
+84_turn_1	In ROS1 Noetic Rviz plugins, can using catkin_make_isolated cause issues with the plugin not showing up?
+84_turn_2	Can following the steps from the old TeleopPanel tutorial cause problems when building a ROS1 Noetic RViz plugin with catkin instead of rosmake?
+84_turn_3	ROS1 Noetic RViz plugin not showing up with catkin_make_isolated; does the visualization_tutorials repo help ensure the plugin is picked up by RViz (plugin_description.xml, package.xml export)?
+84_turn_4	ROS1 Noetic RViz plugin not loading when code is taken from the wrong branch or wrong ROS version (visualization_tutorials repo, catkin_make_isolated)
+85_turn_1	In building ROS 2 examples, could recent setuptools updates be causing build errors, and would downgrading help?
+85_turn_2	setuptools 68.2.1 upgrade fixes SyntaxError in colcon ROS 2 Python package build
+85_turn_3	ROS 2 Python package colcon build errors remaining after changing setuptools version to 68.2.1 or downgrading to 68.1
+89_turn_1	In MoveIt manual configuration, did you make sure 'joint_5_mimic' is actually listed in your robot model?
+89_turn_2	MoveIt SRDF setup: gripper and mimic joints as separate end-effector group
+89_turn_3	MoveIt SRDF end-effector group 'hand' for gripper with mimic joints: configured for collision only, without a kinematic solver for the hand
+89_turn_4	MoveIt gripper control: setting up named poses (group states) for opening and closing the 'hand' end-effector group in the SRDF
+90_turn_1	In Arduino motor control, can rosserial send cmd_vel messages from ROS instead of using custom byte signals?
+90_turn_2	Pitfalls when designing a custom byte packet format for sending motor control commands to an Arduino over serial instead of using rosserial with cmd_vel (geometry_msgs/Twist)
+90_turn_3	Arduino rosserial sending encoder data back to ROS while receiving cmd_vel motor commands, avoiding serial packet collisions or corruption in a custom packet format
+91_turn_1	In ROS messaging with numpy_msg, is it possible to add a header with a timestamp to your messages?
+91_turn_2	ROS numpy_msg array field setup for fast numpy serialization with header added
+91_turn_3	ROS numpy_msg timestamped array message: why not use built-in message types with a header and array field?
+92_turn_1	In building Gazebo Garden with colcon, is there a CMake flag to turn off documentation generation?
+92_turn_2	Gazebo Garden colcon build disable doxygen documentation generation CMake flag
+92_turn_3	Why doesn't colcon have a dedicated option to skip doxygen documentation generation instead of requiring the CMake flag -DBUILD_DOCS=OFF with --cmake-args when building Gazebo Garden?
+92_turn_4	How to find a list of CMake flags such as BUILD_DOCS for controlling documentation generation in Gazebo Garden builds with colcon
+94_turn_1	For integrating ROS2 Galactic with Ignition Gazebo, is the right package name 'ros-galactic-ros-ign' instead of 'ros-galactic-ros-gz'?
+94_turn_2	ROS2 Galactic ros-ign prebuilt packages availability or building from source
+94_turn_3	ros-galactic-ros-gz package release history for ROS2 Galactic, or whether only ros-ign was ever released for Galactic
+97_turn_1	In path planning for holonomic robots, how does having to finish a node before rerouting affect obstacle avoidance when the robot is already moving?
+97_turn_2	Does the distance between nodes make it harder to get smooth motion for a holonomic robot when it is already moving fast in path planning?
+97_turn_3	Would using HNSW (Hierarchical Navigable Small World) help a holonomic robot plan paths faster while it is already moving, in the context of node-based path planning with rerouting after reaching a node?
+97_turn_4	How much does using a faster nearest neighbor search (such as HNSW) actually improve path planning speed for a holonomic robot when there are many obstacles and a large tree?
+99_turn_1	In gz-sim plugins, how can I use GZ_SIM_SYSTEM_PLUGIN_PATH to load custom plugin directories?
+99_turn_2	Does 'gz sim --help' list the correct environment variable for plugin paths, GZ_SIM_SYSTEM_PLUGIN_PATH?
+99_turn_3	gz-sim behavior when GZ_SIM_SYSTEM_PLUGIN_PATH is not set: what happens to system plugin loading
+99_turn_4	Difference between adding a gz-sim plugin folder to LD_LIBRARY_PATH versus setting GZ_SIM_SYSTEM_PLUGIN_PATH for loading custom system plugins

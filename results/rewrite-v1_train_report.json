@@ -1,0 +1,542 @@
+{
+  "variant": "rewrite-v1",
+  "kind": "rewrite",
+  "split": "train",
+  "limit": null,
+  "model": "anthropic/claude-haiku-5-5",
+  "template": "prompts/rewrite_v1.txt",
+  "llm_kwargs": {
+    "reasoning_effort": "low",
+    "max_tokens": 1024
+  },
+  "prices_usd_per_million_tokens": {
+    "input": 0.1,
+    "output": 0.5
+  },
+  "note": "tokens and cost count API calls made in this run; cache hits cost nothing",
+  "created_at": "2026-11-23T19:56:12.435331+00:00",
+  "domains": {
+    "biology": {
+      "turns": 247,
+      "turn1_kept": 59,
+      "rewritten": 186,
+      "llm_calls": 188,
+      "cache_hits": 0,
+      "fallbacks": 2,
+      "flagged": 3,
+      "truncated": 0,
+      "input_tokens": 112844,
+      "output_tokens": 7701,
+      "fallback_reasons": {
+        "18_turn_2": "LLMError: anthropic/claude-haiku-5-5 declined the request (finish_reason=content_filter)",
+        "50_turn_5": "LLMError: anthropic/claude-haiku-5-5 declined the request (finish_reason=content_filter)"
+      },
+      "flagged_terms": {
+        "4_turn_5": [
+          "WWII-era"
+        ],
+        "39_turn_2": [
+          "UVB-induced"
+        ],
+        "49_turn_3": [
+          "Hebbian"
+        ]
+      },
+      "valid": true,
+      "problems": [],
+      "flagged_rate": 0.0161,
+      "cost_usd": 0.015135
+    },
+    "drones": {
+      "turns": 104,
+      "turn1_kept": 26,
+      "rewritten": 78,
+      "llm_calls": 78,
+      "cache_hits": 0,
+      "fallbacks": 0,
+      "flagged": 3,
+      "truncated": 0,
+      "input_tokens": 45642,
+      "output_tokens": 3185,
+      "fallback_reasons": {},
+      "flagged_terms": {
+        "ex_2787_turn_2": [
+          "FPV"
+        ],
+        "ex_2787_turn_3": [
+          "FPV"
+        ],
+        "ex_2707_turn_2": [
+          "FPV"
+        ]
+      },
+      "valid": true,
+      "problems": [],
+      "flagged_rate": 0.0385,
+      "cost_usd": 0.006157
+    },
+    "earth_science": {
+      "turns": 321,
+      "turn1_kept": 69,
+      "rewritten": 252,
+      "llm_calls": 252,
+      "cache_hits": 0,
+      "fallbacks": 0,
+      "flagged": 8,
+      "truncated": 0,
+      "input_tokens": 164536,
+      "output_tokens": 11238,
+      "fallback_reasons": {},
+      "flagged_terms": {
+        "34_turn_2": [
+          "American"
+        ],
+        "35_turn_3": [
+          "Modified",
+          "Mercalli",
+          "Intensity"
+        ],
+        "35_turn_4": [
+          "Modified"
+        ],
+        "67_turn_2": [
+          "1600s",
+          "1700s"
+        ],
+        "67_turn_3": [
+          "James",
+          "Isaac",
+          "Johannes"
+        ],
+        "85_turn_2": [
+          "I"
+        ],
+        "94_turn_4": [
+          "Asia"
+        ],
+        "97_turn_3": [
+          "Exploration"
+        ]
+      },
+      "valid": true,
+      "problems": [],
+      "flagged_rate": 0.0317,
+      "cost_usd": 0.022073
+    },
+    "economics": {
+      "turns": 196,
+      "turn1_kept": 52,
+      "rewritten": 144,
+      "llm_calls": 144,
+      "cache_hits": 0,
+      "fallbacks": 0,
+      "flagged": 7,
+      "truncated": 0,
+      "input_tokens": 82706,
+      "output_tokens": 6439,
+      "fallback_reasons": {},
+      "flagged_terms": {
+        "34_turn_2": [
+          "Bank"
+        ],
+        "34_turn_3": [
+          "Bank"
+        ],
+        "42_turn_3": [
+          "Kalman"
+        ],
+        "55_turn_5": [
+          "Denmark",
+          "Norway",
+          "European"
+        ],
+        "55_turn_6": [
+          "Foreign",
+          "Funds",
+          "World",
+          "War",
+          "II"
+        ],
+        "55_turn_7": [
+          "Denmark",
+          "Norway",
+          "Allied"
+        ],
+        "65_turn_2": [
+          "I"
+        ]
+      },
+      "valid": true,
+      "problems": [],
+      "flagged_rate": 0.0486,
+      "cost_usd": 0.01149
+    },
+    "hardware": {
+      "turns": 130,
+      "turn1_kept": 32,
+      "rewritten": 98,
+      "llm_calls": 98,
+      "cache_hits": 0,
+      "fallbacks": 0,
+      "flagged": 21,
+      "truncated": 0,
+      "input_tokens": 62424,
+      "output_tokens": 4526,
+      "fallback_reasons": {},
+      "flagged_terms": {
+        "ex_19167_turn_3": [
+          "RAM"
+        ],
+        "ex_19167_turn_4": [
+          "SSD"
+        ],
+        "ex_18995_turn_4": [
+          "MacBooks"
+        ],
+        "ex_18378_turn_3": [
+          "LLMs"
+        ],
+        "ex_18378_turn_4": [
+          "12GB"
+        ],
+        "ex_15312_turn_2": [
+          "Core",
+          "i7-10700K"
+        ],
+        "ex_15312_turn_3": [
+          "7",
+          "Core",
+          "i7-11700K"
+        ],
+        "ex_15312_turn_4": [
+          "Core",
+          "i7-11700K",
+          "i7-10700K"
+        ],
+        "ex_14355_turn_5": [
+          "NVIDIA"
+        ],
+        "ex_14355_turn_6": [
+          "NVIDIA"
+        ],
+        "ex_11349_turn_3": [
+          "80W"
+        ],
+        "ex_11067_turn_2": [
+          "Google"
+        ],
+        "ex_10543_turn_2": [
+          "GTX"
+        ],
+        "ex_10543_turn_3": [
+          "GTX"
+        ],
+        "ex_10150_turn_4": [
+          "PSUs"
+        ],
+        "ex_9549_turn_2": [
+          "VLAN"
+        ],
+        "ex_9549_turn_3": [
+          "PoE-capable"
+        ],
+        "ex_9102_turn_4": [
+          "CPU"
+        ],
+        "ex_9102_turn_5": [
+          "GTX"
+        ],
+        "ex_8728_turn_8": [
+          "SBC"
+        ],
+        "ex_7611_turn_2": [
+          "I"
+        ]
+      },
+      "valid": true,
+      "problems": [],
+      "flagged_rate": 0.2143,
+      "cost_usd": 0.008505
+    },
+    "law": {
+      "turns": 164,
+      "turn1_kept": 35,
+      "rewritten": 129,
+      "llm_calls": 129,
+      "cache_hits": 0,
+      "fallbacks": 0,
+      "flagged": 8,
+      "truncated": 0,
+      "input_tokens": 80879,
+      "output_tokens": 6103,
+      "fallback_reasons": {},
+      "flagged_terms": {
+        "ex_110915_turn_3": [
+          "Donald"
+        ],
+        "ex_110704_turn_3": [
+          "English"
+        ],
+        "ex_109956_turn_3": [
+          "Act"
+        ],
+        "ex_107150_turn_5": [
+          "Arthur"
+        ],
+        "ex_106352_turn_3": [
+          "Section",
+          "1297"
+        ],
+        "ex_106202_turn_3": [
+          "Rome",
+          "Statute"
+        ],
+        "ex_105509_turn_2": [
+          "Citizenship"
+        ],
+        "ex_105509_turn_5": [
+          "Canadian"
+        ]
+      },
+      "valid": true,
+      "problems": [],
+      "flagged_rate": 0.062,
+      "cost_usd": 0.011139
+    },
+    "medicalsciences": {
+      "turns": 139,
+      "turn1_kept": 31,
+      "rewritten": 108,
+      "llm_calls": 108,
+      "cache_hits": 0,
+      "fallbacks": 0,
+      "flagged": 4,
+      "truncated": 0,
+      "input_tokens": 69585,
+      "output_tokens": 4830,
+      "fallback_reasons": {},
+      "flagged_terms": {
+        "ex_34368_turn_2": [
+          "Streptococcus"
+        ],
+        "ex_34368_turn_3": [
+          "Streptococcus"
+        ],
+        "ex_34368_turn_4": [
+          "Streptococcus"
+        ],
+        "ex_34368_turn_6": [
+          "Streptococcus"
+        ]
+      },
+      "valid": true,
+      "problems": [],
+      "flagged_rate": 0.037,
+      "cost_usd": 0.009373
+    },
+    "politics": {
+      "turns": 159,
+      "turn1_kept": 30,
+      "rewritten": 129,
+      "llm_calls": 129,
+      "cache_hits": 0,
+      "fallbacks": 0,
+      "flagged": 14,
+      "truncated": 0,
+      "input_tokens": 88924,
+      "output_tokens": 5568,
+      "fallback_reasons": {},
+      "flagged_terms": {
+        "ex_93839_turn_2": [
+          "I"
+        ],
+        "ex_93839_turn_3": [
+          "U.S"
+        ],
+        "ex_93254_turn_5": [
+          "Hamas",
+          "Palestinian"
+        ],
+        "ex_91695_turn_3": [
+          "Washington",
+          "Senate"
+        ],
+        "ex_91488_turn_5": [
+          "1990s"
+        ],
+        "ex_91488_turn_6": [
+          "1960s",
+          "1970s"
+        ],
+        "ex_91488_turn_7": [
+          "Capitol",
+          "2024"
+        ],
+        "ex_91249_turn_2": [
+          "Viktor"
+        ],
+        "ex_91207_turn_6": [
+          "Marine",
+          "National",
+          "Rally"
+        ],
+        "ex_90118_turn_4": [
+          "Kids",
+          "First",
+          "Act"
+        ],
+        "ex_89185_turn_6": [
+          "Walid"
+        ],
+        "ex_89068_turn_3": [
+          "Michel",
+          "French"
+        ],
+        "ex_89068_turn_4": [
+          "Michel",
+          "French",
+          "Marine",
+          "National",
+          "Rally"
+        ],
+        "ex_88912_turn_4": [
+          "Conradh",
+          "Gaeilge's"
+        ]
+      },
+      "valid": true,
+      "problems": [],
+      "flagged_rate": 0.1085,
+      "cost_usd": 0.011676
+    },
+    "psychology": {
+      "turns": 234,
+      "turn1_kept": 59,
+      "rewritten": 175,
+      "llm_calls": 175,
+      "cache_hits": 0,
+      "fallbacks": 0,
+      "flagged": 3,
+      "truncated": 0,
+      "input_tokens": 100656,
+      "output_tokens": 7098,
+      "fallback_reasons": {},
+      "flagged_terms": {
+        "34_turn_2": [
+          "Olympiad"
+        ],
+        "34_turn_3": [
+          "Olympiad"
+        ],
+        "97_turn_2": [
+          "Triplett's"
+        ]
+      },
+      "valid": true,
+      "problems": [],
+      "flagged_rate": 0.0171,
+      "cost_usd": 0.013615
+    },
+    "robotics": {
+      "turns": 184,
+      "turn1_kept": 48,
+      "rewritten": 136,
+      "llm_calls": 136,
+      "cache_hits": 0,
+      "fallbacks": 0,
+      "flagged": 8,
+      "truncated": 0,
+      "input_tokens": 74854,
+      "output_tokens": 6328,
+      "fallback_reasons": {},
+      "flagged_terms": {
+        "24_turn_3": [
+          "Nav2"
+        ],
+        "33_turn_3": [
+          "WrappedResult",
+          "ROS",
+          "2"
+        ],
+        "33_turn_4": [
+          "ROS",
+          "2"
+        ],
+        "67_turn_2": [
+          "Timed",
+          "Elastic",
+          "Band"
+        ],
+        "68_turn_2": [
+          "ROS"
+        ],
+        "75_turn_3": [
+          "I"
+        ],
+        "92_turn_4": [
+          "BUILD_DOCS"
+        ],
+        "97_turn_3": [
+          "Hierarchical",
+          "Navigable",
+          "Small",
+          "World"
+        ]
+      },
+      "valid": true,
+      "problems": [],
+      "flagged_rate": 0.0588,
+      "cost_usd": 0.010649
+    },
+    "sustainable_living": {
+      "turns": 235,
+      "turn1_kept": 55,
+      "rewritten": 180,
+      "llm_calls": 180,
+      "cache_hits": 0,
+      "fallbacks": 0,
+      "flagged": 4,
+      "truncated": 0,
+      "input_tokens": 104121,
+      "output_tokens": 7383,
+      "fallback_reasons": {},
+      "flagged_terms": {
+        "3_turn_2": [
+          "19"
+        ],
+        "24_turn_2": [
+          "Sacramento-San",
+          "Joaquin",
+          "San",
+          "Francisco"
+        ],
+        "27_turn_4": [
+          "US"
+        ],
+        "47_turn_2": [
+          "National",
+          "Program"
+        ]
+      },
+      "valid": true,
+      "problems": [],
+      "flagged_rate": 0.0222,
+      "cost_usd": 0.014104
+    }
+  },
+  "totals": {
+    "turns": 2113,
+    "turn1_kept": 496,
+    "rewritten": 1615,
+    "llm_calls": 1617,
+    "cache_hits": 0,
+    "fallbacks": 2,
+    "flagged": 83,
+    "truncated": 0,
+    "input_tokens": 987171,
+    "output_tokens": 70399,
+    "valid": true,
+    "flagged_rate": 0.0514,
+    "cost_usd": 0.133917
+  }
+}

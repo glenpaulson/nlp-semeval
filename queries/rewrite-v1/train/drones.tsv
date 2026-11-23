@@ -1,0 +1,104 @@
+ex_3025_turn_1	In FPV drone motors, why is lubrication only used inside the bearings and not on the more exposed rotor parts?
+ex_3025_turn_2	Does oil on FPV drone motor rotor parts attract dust and dirt that can get into the bearings and cause friction?
+ex_3025_turn_3	Is factory grease important for preventing fast bearing wear in FPV drone motors?
+ex_3025_turn_4	FPV drone motor construction and whether external lubrication of rotor parts is possible or advisable (sealed bearings with factory grease, exposed rotor parts, dust and dirt contamination)
+ex_2915_turn_1	In battery setups, does connecting batteries in series change the total mAh capacity or does it stay the same?
+ex_2915_turn_2	Do three 7.4V batteries connected in series for 22.2V have the same total mAh capacity as one of the batteries?
+ex_2915_turn_3	How can I connect batteries to get both higher voltage and higher mAh capacity at the same time?
+ex_2915_turn_4	What happens when batteries with mismatched voltages are connected in series or parallel, and can that damage the batteries?
+ex_2913_turn_1	In modern warfare, how do commercial drones still work effectively even when signal jamming is being used against them?
+ex_2913_turn_2	Are there international rules or laws restricting armies from using signal jammers against commercial drones in a war zone?
+ex_2913_turn_3	Does jamming the signal stop a commercial drone that is programmed to follow a set route from reaching its target after it loses signal?
+ex_2913_turn_4	Why is it difficult for military forces to deploy large jammers in the field against drones?
+ex_2913_turn_5	drone signal jamming effectiveness at long range versus short distance
+ex_2913_turn_6	Do custom drone setups with anti-jamming features make them harder to jam than standard off-the-shelf commercial drones?
+ex_2811_turn_1	In ExpressLRS receivers, what makes using SPI at high speeds better than using UART for communication?
+ex_2811_turn_2	ExpressLRS receiver: does the extra microcontroller needed for UART control make SPI-less UART communication slower or less responsive than direct SPI connection to the flight controller's main processor?
+ex_2811_turn_3	ExpressLRS receivers: is achieving higher update rates over SPI really important, or can UART-only modules keep up?
+ex_2811_turn_4	ExpressLRS receiver SPI vs UART wiring differences on a flight controller
+ex_2787_turn_1	Regarding drone signal reception, does moving just the antenna outside help as much as relocating the whole receiver or transmitter?
+ex_2787_turn_2	Add-on accessories to boost indoor signal reception for FPV drone goggles with built-in receivers
+ex_2787_turn_3	Would running a long cable from an outside receiver to goggles with built-in receivers work for drone FPV video, or are there downsides to that setup?
+ex_2787_turn_4	How do you find the best outdoor location for a drone video receiver and antenna to get the strongest signal indoors with goggles?
+ex_2782_turn_1	In FPV drone video, does using an action camera affect latency or video quality when sending the feed over standard radio links?
+ex_2782_turn_2	HD FPV drone video quality and suitability for real-time computer vision
+ex_2782_turn_3	FPV drone camera vs action camera video latency: why FPV cameras transmit video faster than action cameras
+ex_2728_turn_1	In MINI F7 flight controllers, how does using pit mode with the VTX switch help stop the VTX from overheating when the drone isn’t flying?
+ex_2728_turn_2	MINI F7 flight controller SBUS input used only for drone control, not video signals
+ex_2728_turn_3	MINI F7 flight controller Betaflight VTX switch turning VTX on or off, pit mode control
+ex_2728_turn_4	MINI F7 flight controller VTX switch Betaflight swap between cameras or video systems why not possible
+ex_2728_turn_5	MINI F7 flight controller VTX pit mode: does it just lower VTX power to avoid interfering with other pilots nearby?
+ex_2707_turn_1	In drone flying, how do modern controllers stop two Cetus X drones from interfering with each other when flown together?
+ex_2707_turn_2	Cetus X drone FPV goggles maximum number of usable video channels at once
+ex_2707_turn_3	how to change VTX channel on Cetus X drone directly on the drone vs using Betaflight
+ex_2707_turn_4	Cetus X controller stick combination to open Betaflight OSD menu for VTX channel settings
+ex_2707_turn_5	Cetus X drone Betaflight OSD VTX channel change: does the new channel save automatically or require an extra save step?
+ex_2707_turn_6	Why can't Cetus X drones automatically select their own VTX video channels to avoid interfering with each other when flown together?
+ex_2707_turn_7	Cetus X drone FPV video transmitter (VTX) band and power settings: does changing band or power help keep video feeds from interfering?
+ex_2707_turn_8	FPV goggles channel selection: how do goggles know which drone's video feed to lock onto, is it just the strongest signal, Cetus X drone VTX channel
+ex_2707_turn_9	Is a small amount of packet loss noticeable in drone video feeds when flying casually, such as with Cetus X drones and their goggles?
+ex_2685_turn_1	In exporting KML from QGIS to DJI Pilot 2, where should I add altitude values so the file imports correctly?
+ex_2685_turn_2	batch process multiple KML files to add altitude values to coordinates for DJI Pilot 2 import
+ex_2685_turn_3	DJI Pilot 2 KML polygon import: do polygons need to be closed shapes (first and last coordinate identical)?
+ex_2648_turn_1	In RC planes, are standard 3-pin servo plugs reliable for frequent use, or should I look for sturdier connectors for things like cameras?
+ex_2648_turn_2	XT60 XT90 connectors knocked loose in RC plane crash
+ex_2648_turn_3	XT60 and XT90 connectors popularity in RC planes, and what other connectors people commonly use
+ex_2648_turn_4	Do connectors make RC plane wiring messier or tidier than soldering everything, especially for connectors like XT60, XT90, and 3-pin servo plugs?
+ex_2648_turn_5	Why would someone choose bullet connectors over XT60 connectors between the motor and ESC in RC planes?
+ex_2648_turn_6	crimped connectors vs soldering for RC plane wiring and battery/motor connections: reasons people prefer crimping over direct soldering
+ex_2648_turn_7	How do RC plane builders prevent connectors (such as XT60, bullet, and servo connectors) from coming loose or wiggling in cramped builds?
+ex_2632_turn_1	In RC airplane design, are there ways to get glider-like efficiency and endurance without going over a 4.5 ft wingspan?
+ex_2632_turn_2	Does strengthening the structure of a 10 lb RC airplane make tandem wings less practical than using a longer wing?
+ex_2632_turn_3	RC airplane endurance: optimal chord length and aspect ratio for a 4.5 ft wingspan and 10 lb plane
+ex_2616_turn_1	In BLHeli_32 ESCs, have all versions always supported bidirectional rotation, or was that added in later updates?
+ex_2616_turn_2	BLHeli_32 ESC hardware limitations that prevent bidirectional DShot from working correctly even with firmware 32.7.0 or later
+ex_2616_turn_3	BLHeli_32 ESC hardware limitations preventing 3D mode even with firmware that supports it
+ex_2616_turn_4	Easy way to verify if an ESC supports bidirectional rotation (bidirectional DShot / Reversible DShot, 3D mode) before buying it in BLHeli_32 ESCs
+ex_2582_turn_1	In Part 107 drone rules, are you allowed to wear glasses to keep visual line-of-sight, or only use your unaided eyes?
+ex_2582_turn_2	Part 107 drone rules: must the remote pilot keep the drone within visual line-of-sight using their own eyes, even when wearing glasses or contact lenses?
+ex_2582_turn_3	Part 107 drone rules: which visual aids are prohibited for maintaining visual line-of-sight, such as binoculars or night vision goggles
+ex_2575_turn_1	In pilot training, what are VFR Sectional Charts and how do pilots use them when flying by visual rules?
+ex_2575_turn_2	Do VFR Sectional Charts appear on the drone pilot test?
+ex_2575_turn_3	Why is it important to become comfortable reading VFR Sectional Charts before taking the drone pilot test?
+ex_2566_turn_1	In drone regulations, if you have a Part 107 certificate, can you still fly some drones just for fun under recreational rules?
+ex_2566_turn_2	What rules must be followed when flying a drone recreationally for fun under recreational rules?
+ex_2566_turn_3	does a drone with a camera need to follow different rules than one without a camera when flying recreationally
+ex_2526_turn_1	In Mars helicopter design, how does using two coaxial rotors with smaller blades affect efficiency and design choices?
+ex_2526_turn_2	Mars helicopter coaxial rotors vs. tail rotor power consumption: does skipping the tail rotor save overall power, or does the coaxial setup's interference losses use it up?
+ex_2526_turn_3	Does using overlapping coaxial rotors on a Mars helicopter help keep the helicopter smaller, even though it is less power-efficient?
+ex_2523_turn_1	In paramotor design, how can I figure out if my 18x7" propeller and DLE 55RA engine will give me enough thrust using online calculators?
+ex_2523_turn_2	Does adding a duct to an 18x7" propeller on a DLE 55RA paramotor engine make it noticeably heavier or slower than using an open propeller?
+ex_2523_turn_3	paramotor ducted prop vs open prop thrust with same engine (18x7" propeller, DLE 55RA)
+ex_2492_turn_1	In building a 450mm drone, what are the pros and cons of using an all-in-one flight controller versus separate components?
+ex_2492_turn_2	How do I determine the amp rating needed for ESCs on a 450mm drone with separate flight controller and ESC components?
+ex_2492_turn_3	standard size mounting holes for 450mm drone frame ESC or flight controller
+ex_2492_turn_4	How do I determine whether a flight controller for a 450mm drone can handle the voltage of its batteries?
+ex_2488_turn_1	In multirotor designs, what happens if you mount the motors at different heights—does it really help with airflow between the rotors?
+ex_2488_turn_2	Would raising the rear motors on a multirotor let those rear props work in cleaner air when flying forward?
+ex_2488_turn_3	Multirotor motor height offset effect on rotor-to-rotor airflow interaction
+ex_2466_turn_1	In BLHeli ESCs, how is the reverse function different from the way car ESCs handle braking and reverse speed?
+ex_2466_turn_2	BLHeli ESC bidirectional mode setup: what settings must be configured on the ESC to enable bidirectional control with center throttle as zero?
+ex_2466_turn_3	BLHeli ESC 3D mode bidirectional operation with a regular PWM receiver: does it provide full forward and reverse?
+ex_2466_turn_4	Does throttle response feel different using PWM versus DSHOT with BLHeli ESCs in bidirectional mode (3D mode)?
+ex_2358_turn_1	In multispectral imagery, how can I tell which band comes first in a RedEdge MX orthomosaic—like, is it always blue?
+ex_2358_turn_2	how do I identify which band is which in DJI multispectral images compared to RedEdge MX orthomosaics, since DJI images are not labeled like RedEdge ones?
+ex_2358_turn_3	How do changes to the band setup in Camera Calibration affect the bands shown in the Raster Calculator for RedEdge MX or DJI multispectral imagery?
+ex_2357_turn_1	In DJI Mini 2 photos, are there hidden metadata tags that most photo viewers don’t show, and how can people access them?
+ex_2357_turn_2	DJI Mini 2 photo GPS metadata tags saved in image files and how closely they match real-time flight GPS data
+ex_2357_turn_3	DJI Mini 2 photo metadata: does it save gimbal angle or camera tilt in the image file?
+ex_2276_turn_1	In helicopter aerodynamics, why can't we just use the standard lift formula for airplane wings to figure out how much lift a rotor blade makes?
+ex_2276_turn_2	Helicopter rotor blade lift: calculating lift at each blade element along the blade and integrating over the span (Blade Element Momentum Theory)
+ex_2276_turn_3	helicopter rotor total lift effect of adding more blades, does lift always increase or is there more to it than multiplying
+ex_2276_turn_4	Does the size of the whole rotor disk determine how much total lift a helicopter rotor can produce?
+ex_2276_turn_5	How does calculating rotor power required relate to the energy imparted to the air by the helicopter rotor blades in Blade Element Momentum Theory?
+ex_2232_turn_1	In using a BMP280 as an altimeter for a CanSat, what’s the smallest altitude change it can actually detect during descent?
+ex_2232_turn_2	CanSat BMP280 pressure sensor: single static pressure port hole vs multiple holes spaced around the can for altitude readings
+ex_2232_turn_3	Effect of pressure port hole size on response speed and accuracy of a BMP280 altimeter during CanSat descent
+ex_2232_turn_4	BMP280 altimeter CanSat pressure reading averaging window: how long to average before readings lag behind real altitude changes during descent
+ex_2209_turn_1	In DJI Fly App availability, why did DJI remove it from the Play Store because of Google's new app requirements?
+ex_2209_turn_2	DJI Fly app from alternative app stores: does it work the same way after removal from Google Play Store due to AAB format requirement?
+ex_2209_turn_3	DJI Fly app sideloading explanation: why users had to sideload the DJI Fly app instead of updating it normally on the Play Store
+ex_2209_turn_4	DJI Fly app installation difficulty: installing directly from DJI's website (sideloading) compared to downloading from the Google Play Store
+ex_2188_turn_1	In using the Mavic Mini 2, are there any good third-party ways to use VR goggles for first-person flying, and what are the trade-offs?
+ex_2188_turn_2	Why doesn't the DJI Mavic Mini 2 work with official DJI FPV goggles and controllers?
+ex_2188_turn_3	DJI FPV goggles and controller price for Mavic Mini 2 school projects
