@@ -5,6 +5,7 @@ requires-python = ">=3.12"
 dependencies = [
     "gensim>=4.4.0",
     "huggingface-hub>=2.4.0",
+    "litellm>=1.110.2",
     "pyarrow>=26.0.1",
     "pyserini>=2.4.0",
     "python-dotenv>=1.2.4",
