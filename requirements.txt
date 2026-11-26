@@ -254,6 +254,7 @@ numpy==2.5.5
     #   onnxruntime
     #   pandas
     #   pyserini
+    #   pytrec-eval-terrier
     #   scikit-learn
     #   scipy
     #   transformers
@@ -264,23 +265,23 @@ nvidia-cublas==13.4.1.3 ; sys_platform == 'linux'
     #   nvidia-cusolver
 nvidia-cuda-cccl==13.3.5.0.6 ; sys_platform == 'linux'
     # via nvidia-nvshmem-cu13
-nvidia-cuda-cupti==13.2.86 ; (platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')
+nvidia-cuda-cupti==13.2.86 ; (platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'
     # via cuda-toolkit
 nvidia-cuda-nvrtc==13.2.86 ; sys_platform == 'linux'
     # via
     #   cuda-toolkit
     #   nvidia-cublas
-nvidia-cuda-runtime==13.2.86 ; (platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')
+nvidia-cuda-runtime==13.2.86 ; (platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'
     # via cuda-toolkit
 nvidia-cudnn-cu13==9.26.0.51 ; sys_platform == 'linux'
     # via torch
-nvidia-cufft==12.2.0.57 ; (platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')
+nvidia-cufft==12.2.0.57 ; (platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'
     # via cuda-toolkit
-nvidia-cufile==1.17.1.22 ; (platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')
+nvidia-cufile==1.17.1.22 ; (platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'
     # via cuda-toolkit
-nvidia-cusolver==12.2.0.11 ; (platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')
+nvidia-cusolver==12.2.0.11 ; (platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'
     # via cuda-toolkit
-nvidia-cusparse==12.7.10.12 ; (platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')
+nvidia-cusparse==12.7.10.12 ; (platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'
     # via
     #   cuda-toolkit
     #   nvidia-cusolver
@@ -288,7 +289,7 @@ nvidia-cusparselt-cu13==0.8.1 ; sys_platform == 'linux'
     # via torch
 nvidia-nccl-cu13==2.30.7 ; sys_platform == 'linux'
     # via torch
-nvidia-nvjitlink==13.5.37 ; (platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')
+nvidia-nvjitlink==13.5.37 ; (platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'
     # via
     #   cuda-toolkit
     #   nvidia-cufft
@@ -296,7 +297,7 @@ nvidia-nvjitlink==13.5.37 ; (platform_machine == 'aarch64' and sys_platform == '
     #   nvidia-cusparse
 nvidia-nvshmem-cu13==3.7.2 ; sys_platform == 'linux'
     # via torch
-nvidia-nvtx==13.2.86 ; (platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')
+nvidia-nvtx==13.2.86 ; (platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'
     # via cuda-toolkit
 onnxruntime==1.32.0
     # via pyserini
@@ -392,7 +393,9 @@ python-multipart==0.0.34
     # via
     #   fastmcp-slim
     #   mcp
-pytrec-eval==0.5
+pytrec-eval==0.5 ; sys_platform != 'win32'
+    # via nlp-semeval
+pytrec-eval-terrier==0.5.11 ; sys_platform == 'win32'
     # via nlp-semeval
 pywin32==312 ; sys_platform == 'win32'
     # via mcp
@@ -440,6 +443,7 @@ scipy==1.18.1
     # via
     #   gensim
     #   pyserini
+    #   pytrec-eval-terrier
     #   scikit-learn
 sentencepiece==0.2.3
     # via pyserini
