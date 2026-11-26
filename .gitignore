@@ -6,5 +6,6 @@ cache/
 __pycache__/
 *.pyc
 .DS_Store
-runs/
+runs/*
+!runs/rw2+reason+hist__dense-bge-small/
 queries/*+hist/
