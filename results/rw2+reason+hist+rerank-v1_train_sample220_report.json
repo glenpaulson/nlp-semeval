@@ -1,0 +1,49 @@
+{
+  "run": "rw2+reason+hist+rerank-v1",
+  "base_run": "rw2+reason+hist",
+  "split": "train",
+  "model": "anthropic/claude-haiku-5-5",
+  "variant": "rerank-v1",
+  "top_k": 30,
+  "sample": 220,
+  "sample_seed": 2027,
+  "topics_per_domain": {
+    "biology": 20,
+    "drones": 13,
+    "earth_science": 36,
+    "economics": 29,
+    "hardware": 12,
+    "law": 20,
+    "medicalsciences": 15,
+    "politics": 12,
+    "psychology": 23,
+    "robotics": 15,
+    "sustainable_living": 25
+  },
+  "llm_kwargs": {
+    "reasoning_effort": "low",
+    "max_tokens": 1024
+  },
+  "alphas": [
+    0.5,
+    0.4,
+    0.3,
+    0.2,
+    0.1,
+    0.05
+  ],
+  "turns_without_usable_scores": 0,
+  "turns_with_partial_scores": 0,
+  "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "api_calls": 0,
+    "cache_hits": 220
+  },
+  "cost_usd": 0.0,
+  "prices_usd_per_million_tokens": {
+    "input": 0.1,
+    "output": 0.5
+  },
+  "note": "tokens and cost count API calls made in this run; cache hits cost nothing"
+}
