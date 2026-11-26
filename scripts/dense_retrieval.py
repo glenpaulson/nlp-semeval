@@ -42,10 +42,15 @@ BATCH_SIZE = 64
 CACHE_DIR = REPO_ROOT / "cache" / "dense" / "bge-small-en-v1.5"
 
 
+def get_device():
+    """Return the torch device to use: cuda, else Apple GPU (mps), else cpu."""
+    return "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
+
+
 def load_model():
     from sentence_transformers import SentenceTransformer
 
-    device = "cuda" if torch.cuda.is_available() else "cpu"
+    device = get_device()
     print(f"loading {MODEL_NAME} on {device}")
     model = SentenceTransformer(MODEL_NAME, device=device)
     model.max_seq_length = MAX_TOKENS
@@ -82,7 +87,7 @@ def load_doc_vectors(model, domain):
 
 def search(doc_vectors, query_vectors, doc_ids, qids):
     """Return {qid: [(doc_id, score), ...]} with the top 100 documents for each query."""
-    device = "cuda" if torch.cuda.is_available() else "cpu"
+    device = get_device()
     docs = torch.from_numpy(doc_vectors).to(device).float()
     queries = torch.from_numpy(query_vectors).to(device).float()
 

@@ -17,6 +17,10 @@ from src.data import DOMAINS, SPLITS, load_qrels  # noqa: E402
 
 BUCKETS = ["T1", "T2", "T3", "T4", "T5+"]
 TIE = 1e-9
+DEFAULT_RETRIEVAL_NOTE = (
+    "official starter-kit BM25 (Pyserini Lucene analyzer, gensim `LuceneBM25Model`, k1=0.9, b=0.4), "
+    "top 100 per turn; nDCG@10 via pytrec_eval, averaged per domain, then over the 11 domains."
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -30,6 +34,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--prefix", help="output prefix under results/ (default: final_<split>)")
     parser.add_argument("--cost-report", nargs="*", default=[], help="run_rewrite.py JSON reports to sum for LLM cost")
     parser.add_argument("--note", action="append", default=[], help="extra bullet for the summary (repeatable)")
+    parser.add_argument("--title", help="summary heading (default: Final <split> results: RETECO sub-track 2a)")
+    parser.add_argument("--retrieval-note", default=DEFAULT_RETRIEVAL_NOTE, help="text of the summary's Retrieval bullet")
     return parser.parse_args()
 
 
@@ -145,11 +151,10 @@ def main() -> int:
         report = json.loads(Path(report_path).read_text(encoding="utf-8"))
         costs.append((Path(report_path).name, report["variant"], report["split"], report["totals"]["cost_usd"]))
 
-    md = [f"# Final {args.split} results: RETECO sub-track 2a", ""]
+    md = [f"# {args.title or f'Final {args.split} results: RETECO sub-track 2a'}", ""]
     md.append(f"Generated {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC by `scripts/compare_runs.py`.")
     md.append("")
-    md.append("- Retrieval: official starter-kit BM25 (Pyserini Lucene analyzer, gensim `LuceneBM25Model`, k1=0.9, b=0.4), "
-              "top 100 per turn; nDCG@10 via pytrec_eval, averaged per domain, then over the 11 domains.")
+    md.append(f"- Retrieval: {args.retrieval_note}")
     md.append(f"- Significance: two-sided paired randomization test vs `{args.baseline}` over all {len(keys)} "
               f"{args.split} turns, {args.permutations:,} sign-flip permutations (seed {args.seed}); the statistic is "
               f"the macro-averaged difference (each turn weighted 1 / (11 x turns in its domain)).")
