@@ -9,6 +9,20 @@ dependencies = [
     "pyarrow>=26.0.1",
     "pyserini>=2.4.0",
     "python-dotenv>=1.2.4",
-    "pytrec-eval>=0.5",
+    # Same `import pytrec_eval`; pytrec-eval has no Windows wheel and its source build needs network + MSVC.
+    "pytrec-eval>=0.5; sys_platform != 'win32'",
+    "pytrec-eval-terrier>=0.5.11; sys_platform == 'win32'",
+    "sentence-transformers>=6.3.0",
+    "torch>=2.15.0",
     "tqdm>=4.70.1",
 ]
+
+# On Windows, get torch from the PyTorch CUDA index so the GPU can be used.
+# Mac/Linux still get the normal torch from PyPI.
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu132", marker = "sys_platform == 'win32'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu132"
+url = "https://download.pytorch.org/whl/cu132"
+explicit = true

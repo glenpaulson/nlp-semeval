@@ -1,0 +1,13 @@
+domain,rw2+reason+hist,rw2+reason+hist__bm25-k0.9-b0.6
+biology,0.724805,0.661513
+drones,0.274077,0.300741
+earth_science,0.698966,0.606296
+economics,0.495093,0.502009
+hardware,0.298928,0.354957
+law,0.386992,0.408255
+medicalsciences,0.187508,0.222216
+politics,0.345057,0.368585
+psychology,0.652554,0.630371
+robotics,0.601252,0.576887
+sustainable_living,0.591449,0.592395
+macro_avg (11 domains),0.47788,0.47493
