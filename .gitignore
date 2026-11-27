@@ -9,3 +9,8 @@ __pycache__/
 runs/*
 !runs/rw2+reason+hist__dense-bge-small/
 queries/*+hist/
+# reranker inputs and output for the reported dev result (train runs stay local; they are large)
+!runs/rw2+reason+hist/
+runs/rw2+reason+hist/train/
+!runs/rw2+reason+hist+rerank-v1-a0.3/
+runs/rw2+reason+hist+rerank-v1-a0.3/train/
