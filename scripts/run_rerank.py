@@ -39,7 +39,26 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--top-k", type=int, default=TOP_K)
     parser.add_argument("--run-name", help="default: <base-run>+<variant>")
     parser.add_argument("--concurrency", type=int, default=8)
+    parser.add_argument("--reuse-scores", action="store_true",
+                        help="read the saved per-turn LLM scores (results/rerank_scores/) instead of calling the LLM, "
+                             "so a committed result can be rebuilt exactly with no API key or cost")
     return parser.parse_args()
+
+
+def scores_path(run_name: str, split: str, domain: str) -> Path:
+    return REPO_ROOT / "results" / "rerank_scores" / run_name / split / f"{domain}.json"
+
+
+def save_scores(path: Path, meta: dict, scores: dict[str, dict[str, float]]) -> None:
+    """Write {topic_id: {doc_id: llm_score}} for the reranked head of each turn, with the settings that produced it."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({"meta": meta, "scores": scores}, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def load_scores(path: Path) -> dict[str, dict[str, float]]:
+    if not path.is_file():
+        sys.exit(f"missing saved scores {path.relative_to(REPO_ROOT)}; run once without --reuse-scores")
+    return json.loads(path.read_text(encoding="utf-8"))["scores"]
 
 
 def cost_usd(input_tokens: int, output_tokens: int) -> float:
@@ -80,24 +99,37 @@ def main() -> int:
         qrels = {q: r for q, r in qrels_by_domain[domain].items() if q in {t.topic_id for t in turns}}
         topics_per_domain[domain] = len(qrels)
 
-        need = {d for t in turns for d, _ in ranked[t.topic_id][: args.top_k]}
-        content = {doc_id: text for doc_id, text in iter_corpus(domain) if doc_id in need}
-        messages = [
-            build_messages(t, [content[d] for d, _ in ranked[t.topic_id][: args.top_k]], args.variant) for t in turns
-        ]
-        replies = complete_many(messages, concurrency=args.concurrency, return_exceptions=True, **LLM_KWARGS)
-
-        scores = {}
-        for t, reply in zip(turns, replies):
-            n = min(args.top_k, len(ranked[t.topic_id]))
-            if isinstance(reply, (LLMError, Exception)):
-                print(f"  {t.topic_id}: LLM failed ({reply}); keeping BM25 order")
-                scores[t.topic_id], unparsed = {}, unparsed + 1
-                continue
-            parsed = parse_scores(reply, n)
-            scores[t.topic_id] = parsed
-            unparsed += not parsed
-            incomplete += bool(parsed) and len(parsed) < n
+        head = {t.topic_id: [d for d, _ in ranked[t.topic_id][: args.top_k]] for t in turns}
+        scores = {}  # topic_id -> {1-based BM25 rank in the head: llm score}
+        if args.reuse_scores:
+            saved = load_scores(scores_path(run_name, args.split, domain))
+            if missing := [t.topic_id for t in turns if t.topic_id not in saved]:
+                sys.exit(f"{domain}: saved scores miss {len(missing)} turns, e.g. {missing[:3]}")
+            for t in turns:
+                scores[t.topic_id] = {r: saved[t.topic_id][d] for r, d in enumerate(head[t.topic_id], 1) if d in saved[t.topic_id]}
+        else:
+            need = {d for ds in head.values() for d in ds}
+            content = {doc_id: text for doc_id, text in iter_corpus(domain) if doc_id in need}
+            messages = [build_messages(t, [content[d] for d in head[t.topic_id]], args.variant) for t in turns]
+            replies = complete_many(messages, concurrency=args.concurrency, return_exceptions=True, **LLM_KWARGS)
+            for t, reply in zip(turns, replies):
+                if isinstance(reply, LLMError):  # a refused or empty reply: keep BM25 order for this turn, but count it
+                    print(f"  {t.topic_id}: LLM gave no usable reply ({reply}); keeping BM25 order")
+                    scores[t.topic_id] = {}
+                elif isinstance(reply, Exception):  # auth, exhausted retries, bugs: stop instead of hiding it in the score
+                    raise reply
+                else:
+                    scores[t.topic_id] = parse_scores(reply, len(head[t.topic_id]))
+            meta = {"base_run": args.base_run, "split": args.split, "domain": domain, "model": model,
+                    "variant": args.variant, "top_k": args.top_k, "llm_kwargs": LLM_KWARGS}
+            save_scores(
+                scores_path(run_name, args.split, domain), meta,
+                {q: {head[q][r - 1]: s for r, s in sc.items()} for q, sc in scores.items()},
+            )
+        for t in turns:
+            n = len(head[t.topic_id])
+            unparsed += not scores[t.topic_id]
+            incomplete += bool(scores[t.topic_id]) and len(scores[t.topic_id]) < n
 
         bm25_scores[domain] = mean_ndcg10({t.topic_id: dict(ranked[t.topic_id]) for t in turns}, qrels)
         line = f"{domain:<20} BM25 {bm25_scores[domain]:.4f}"
@@ -133,9 +165,12 @@ def main() -> int:
         "prices_usd_per_million_tokens": {"input": PRICE_IN, "output": PRICE_OUT},
         "note": "tokens and cost count API calls made in this run; cache hits cost nothing",
     }
-    (REPO_ROOT / "results" / f"{run_name}_{args.split}{suffix}_report.json").write_text(
-        json.dumps(report, indent=2) + "\n", encoding="utf-8"
-    )
+    if args.reuse_scores:  # a rebuild makes no API calls; keep the cost report from the run that did
+        print("rebuilt from saved scores: the original LLM report was left unchanged")
+    else:
+        (REPO_ROOT / "results" / f"{run_name}_{args.split}{suffix}_report.json").write_text(
+            json.dumps(report, indent=2) + "\n", encoding="utf-8"
+        )
     print(f"unusable replies {unparsed}, partial {incomplete}; {used}; cost ${cost:.4f}")
     print(f"wrote {out.relative_to(REPO_ROOT)}")
     return 0
