@@ -96,6 +96,9 @@ def main() -> int:
         ranked = {q: sorted(d.items(), key=lambda x: x[1], reverse=True) for q, d in base.items()}
         turns = [t for t in load_turns(args.split, domain) if chosen is None or (domain, t.topic_id) in chosen]
         turns = [t for t in turns if t.topic_id in ranked]
+        if not turns:  # a small --sample can leave a domain empty
+            print(f"{domain:<20} no sampled turns, skipped")
+            continue
         qrels = {q: r for q, r in qrels_by_domain[domain].items() if q in {t.topic_id for t in turns}}
         topics_per_domain[domain] = len(qrels)
 
@@ -141,11 +144,12 @@ def main() -> int:
             line += f"  a={alpha:g} {per_alpha[alpha][domain]:.4f}"
         print(f"{line}  turns {len(qrels):>4}  {time.time() - start:5.1f}s", flush=True)
 
-    macro_bm25 = sum(bm25_scores.values()) / len(domains)
-    rows = [{"setting": "bm25 (no rerank)", **{d: round(bm25_scores[d], 6) for d in domains}, "macro": round(macro_bm25, 6)}]
+    scored = [d for d in domains if d in bm25_scores]
+    macro_bm25 = sum(bm25_scores.values()) / len(scored)
+    rows = [{"setting": "bm25 (no rerank)", **{d: round(bm25_scores[d], 6) for d in scored}, "macro": round(macro_bm25, 6)}]
     for alpha in args.alphas:
-        macro = sum(per_alpha[alpha].values()) / len(domains)
-        rows.append({"setting": f"alpha={alpha:g}", **{d: round(per_alpha[alpha][d], 6) for d in domains}, "macro": round(macro, 6)})
+        macro = sum(per_alpha[alpha].values()) / len(scored)
+        rows.append({"setting": f"alpha={alpha:g}", **{d: round(per_alpha[alpha][d], 6) for d in scored}, "macro": round(macro, 6)})
         print(f"alpha={alpha:g}: macro nDCG@10 {macro:.4f} (BM25 {macro_bm25:.4f}, {macro - macro_bm25:+.4f})")
 
     used = {k: usage_summary()[k] - before[k] for k in before}
