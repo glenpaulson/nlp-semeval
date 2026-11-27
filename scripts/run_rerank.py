@@ -39,6 +39,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--top-k", type=int, default=TOP_K)
     parser.add_argument("--run-name", help="default: <base-run>+<variant>")
     parser.add_argument("--concurrency", type=int, default=8)
+    parser.add_argument("--refresh", action="store_true",
+                        help="ignore cached LLM replies and call the API again (overwrites those cache entries)")
     parser.add_argument("--reuse-scores", action="store_true",
                         help="read the saved per-turn LLM scores (results/rerank_scores/) instead of calling the LLM, "
                              "so a committed result can be rebuilt exactly with no API key or cost")
@@ -114,7 +116,7 @@ def main() -> int:
             need = {d for ds in head.values() for d in ds}
             content = {doc_id: text for doc_id, text in iter_corpus(domain) if doc_id in need}
             messages = [build_messages(t, [content[d] for d in head[t.topic_id]], args.variant) for t in turns]
-            replies = complete_many(messages, concurrency=args.concurrency, return_exceptions=True, **LLM_KWARGS)
+            replies = complete_many(messages, concurrency=args.concurrency, return_exceptions=True, refresh=args.refresh, **LLM_KWARGS)
             for t, reply in zip(turns, replies):
                 if isinstance(reply, LLMError):  # a refused or empty reply: keep BM25 order for this turn, but count it
                     print(f"  {t.topic_id}: LLM gave no usable reply ({reply}); keeping BM25 order")
